@@ -1,0 +1,6 @@
+<map id="write_argument_to_mouse" name="write_argument_to_mouse">
+<area shape="rect" id="node1" title="Writes the argument to the input_buffer after sending the 0xD4 and reads the acknolege from output_bu..." alt="" coords="352,31,527,57"/>
+<area shape="rect" id="node2" href="$group__mouse.html#ga632a86d84609ae8e832ee5cb4cf226a0" title="Disables the mouse data and sets the stream mode." alt="" coords="163,5,304,32"/>
+<area shape="rect" id="node4" href="$group__mouse.html#ga866efc30e91b75112023958dc0348148" title="Sets the stream mode and enables the mouse data." alt="" coords="164,56,303,83"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,5,115,32"/>
+</map>

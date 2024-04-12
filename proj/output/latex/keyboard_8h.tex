@@ -1,0 +1,70 @@
+\hypertarget{keyboard_8h}{}\doxysection{keyboard.\+h File Reference}
+\label{keyboard_8h}\index{keyboard.h@{keyboard.h}}
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__keyboard_ga86759203ec8ed160a094b1f17b0ad084}{kbc\+\_\+subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes the keyboard. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__keyboard_gad76a10e1c3df32c355a1b0ab8c015e3d}{kbc\+\_\+unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes the keyboard. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__keyboard_gae98d2188f25f699678d9aa9372441844}{print\+SC}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__keyboard_gaa46f02b061a98185b8df6e4cc1a1c23c}{write\+Command}} (uint8\+\_\+t cmd, uint8\+\_\+t port)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__keyboard_gabbe0c9700f4970531bcaba93aeed666c}{read\+Data}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__keyboard_ga240affc37531919dd1bdf3d8c27a64d4}{kbc\+Enable\+Interrutpt}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{keyboard_8h_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+int \mbox{\hyperlink{keyboard_8h_a3e18e5ab1201e205ce88c473a2f4bf99}{bytes}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{keyboard_8h_a4cbc2430b3efdd26ec74f5d43d4fd9a3}{scancodes}} \mbox{[}2\mbox{]}
+\item 
+bool \mbox{\hyperlink{keyboard_8h_a83b83f0755f115b133c5afa21cbcfd1b}{makecode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{keyboard_8h_a3e18e5ab1201e205ce88c473a2f4bf99}\label{keyboard_8h_a3e18e5ab1201e205ce88c473a2f4bf99}} 
+\index{keyboard.h@{keyboard.h}!bytes@{bytes}}
+\index{bytes@{bytes}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily int bytes\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{keyboard_8h_a83b83f0755f115b133c5afa21cbcfd1b}\label{keyboard_8h_a83b83f0755f115b133c5afa21cbcfd1b}} 
+\index{keyboard.h@{keyboard.h}!makecode@{makecode}}
+\index{makecode@{makecode}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{makecode}{makecode}}
+{\footnotesize\ttfamily bool makecode\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{keyboard_8h_aa1de7a5557e9d96b83cf03f73c92163f}\label{keyboard_8h_aa1de7a5557e9d96b83cf03f73c92163f}} 
+\index{keyboard.h@{keyboard.h}!scancode@{scancode}}
+\index{scancode@{scancode}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily uint8\+\_\+t scancode\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{keyboard_8h_a4cbc2430b3efdd26ec74f5d43d4fd9a3}\label{keyboard_8h_a4cbc2430b3efdd26ec74f5d43d4fd9a3}} 
+\index{keyboard.h@{keyboard.h}!scancodes@{scancodes}}
+\index{scancodes@{scancodes}!keyboard.h@{keyboard.h}}
+\doxysubsubsection{\texorpdfstring{scancodes}{scancodes}}
+{\footnotesize\ttfamily uint8\+\_\+t scancodes\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+

@@ -1,0 +1,180 @@
+\hypertarget{group__mouse}{}\doxysection{mouse}
+\label{group__mouse}\index{mouse@{mouse}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga58140ce4b013e279247e5b4054586589}{mouse\+\_\+subscribe}} (uint8\+\_\+t $\ast$\mbox{\hyperlink{mouse_8c_a0b0da21bbdff62b7b28e9af7ec3d0d76}{hook\+\_\+id\+\_\+mouse}})
+\begin{DoxyCompactList}\small\item\em Subscribes the mouse. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f}{mouse\+\_\+unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unubscribes the mouse. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mouse}{Mouse}} interrupt handler. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga052f2a8458c7e3f2af5c2f472e82db2d}{print\+\_\+mouse\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em updates the packets \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga92e4a14386ad2dbd01ebf126a76da677}{write\+\_\+argument\+\_\+to\+\_\+mouse}} (uint8\+\_\+t argument)
+\begin{DoxyCompactList}\small\item\em Writes the argument to the input\+\_\+buffer after sending the 0x\+D4 and reads the acknolege from output\+\_\+buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga866efc30e91b75112023958dc0348148}{enable\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Sets the stream mode and enables the mouse data. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga632a86d84609ae8e832ee5cb4cf226a0}{disable\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Disables the mouse data and sets the stream mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using mouse 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__mouse_ga632a86d84609ae8e832ee5cb4cf226a0}\label{group__mouse_ga632a86d84609ae8e832ee5cb4cf226a0}} 
+\index{mouse@{mouse}!disable\_mouse\_data@{disable\_mouse\_data}}
+\index{disable\_mouse\_data@{disable\_mouse\_data}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{disable\_mouse\_data()}{disable\_mouse\_data()}}
+{\footnotesize\ttfamily int() disable\+\_\+mouse\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disables the mouse data and sets the stream mode. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga632a86d84609ae8e832ee5cb4cf226a0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{group__mouse_ga632a86d84609ae8e832ee5cb4cf226a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga866efc30e91b75112023958dc0348148}\label{group__mouse_ga866efc30e91b75112023958dc0348148}} 
+\index{mouse@{mouse}!enable\_mouse\_data@{enable\_mouse\_data}}
+\index{enable\_mouse\_data@{enable\_mouse\_data}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{enable\_mouse\_data()}{enable\_mouse\_data()}}
+{\footnotesize\ttfamily int() enable\+\_\+mouse\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the stream mode and enables the mouse data. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga866efc30e91b75112023958dc0348148_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga210374b50462acdedab00df64d5cea3c}\label{group__mouse_ga210374b50462acdedab00df64d5cea3c}} 
+\index{mouse@{mouse}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{struct_mouse}{Mouse}} interrupt handler. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{group__mouse_ga210374b50462acdedab00df64d5cea3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{group__mouse_ga210374b50462acdedab00df64d5cea3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga58140ce4b013e279247e5b4054586589}\label{group__mouse_ga58140ce4b013e279247e5b4054586589}} 
+\index{mouse@{mouse}!mouse\_subscribe@{mouse\_subscribe}}
+\index{mouse\_subscribe@{mouse\_subscribe}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe()}{mouse\_subscribe()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{hook\+\_\+id\+\_\+mouse }\end{DoxyParamCaption})}
+
+
+
+Subscribes the mouse. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{group__mouse_ga58140ce4b013e279247e5b4054586589_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f}\label{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f}} 
+\index{mouse@{mouse}!mouse\_unsubscribe@{mouse\_unsubscribe}}
+\index{mouse\_unsubscribe@{mouse\_unsubscribe}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe()}{mouse\_unsubscribe()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unubscribes the mouse. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga052f2a8458c7e3f2af5c2f472e82db2d}\label{group__mouse_ga052f2a8458c7e3f2af5c2f472e82db2d}} 
+\index{mouse@{mouse}!print\_mouse\_packet@{print\_mouse\_packet}}
+\index{print\_mouse\_packet@{print\_mouse\_packet}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{print\_mouse\_packet()}{print\_mouse\_packet()}}
+{\footnotesize\ttfamily void() print\+\_\+mouse\+\_\+packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+updates the packets 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{group__mouse_ga052f2a8458c7e3f2af5c2f472e82db2d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__mouse_ga92e4a14386ad2dbd01ebf126a76da677}\label{group__mouse_ga92e4a14386ad2dbd01ebf126a76da677}} 
+\index{mouse@{mouse}!write\_argument\_to\_mouse@{write\_argument\_to\_mouse}}
+\index{write\_argument\_to\_mouse@{write\_argument\_to\_mouse}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{write\_argument\_to\_mouse()}{write\_argument\_to\_mouse()}}
+{\footnotesize\ttfamily int() write\+\_\+argument\+\_\+to\+\_\+mouse (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{argument }\end{DoxyParamCaption})}
+
+
+
+Writes the argument to the input\+\_\+buffer after sending the 0x\+D4 and reads the acknolege from output\+\_\+buffer. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{group__mouse_ga92e4a14386ad2dbd01ebf126a76da677_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__mouse_ga92e4a14386ad2dbd01ebf126a76da677_icgraph}
+\end{center}
+\end{figure}

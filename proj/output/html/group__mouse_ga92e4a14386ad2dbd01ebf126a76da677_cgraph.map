@@ -1,0 +1,4 @@
+<map id="write_argument_to_mouse" name="write_argument_to_mouse">
+<area shape="rect" id="node1" title="Writes the argument to the input_buffer after sending the 0xD4 and reads the acknolege from output_bu..." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="228,5,319,32"/>
+</map>

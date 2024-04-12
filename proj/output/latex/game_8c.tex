@@ -1,0 +1,304 @@
+\hypertarget{game_8c}{}\doxysection{game.\+c File Reference}
+\label{game_8c}\index{game.c@{game.c}}
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pixmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lab5.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for game.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__game_ga2f98390fa85c2682a7aceaeced936f82}{initialize\+\_\+game\+\_\+cards}} (\mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}} $\ast$\mbox{\hyperlink{proj_8c_a67eb121323aaae7379613db3c4310a6a}{card\+Array}})
+\begin{DoxyCompactList}\small\item\em Generates the board, the 16 cards of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga9d089493fcdc7c31cbf75b27d4b10264}{initialize\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the Player stats. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__game_gabd7266acf9159cb22ea03bec1f95b720}{get\+Cards\+Screen\+XY}} (int $\ast$\mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, int $\ast$\mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}})
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{struct_cards}{Cards}} Screen X Y object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gadbcbc0c32d27663f192796d80b2669a4}{create\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Create a mouse object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga441fdbca6cd83b7b285b640204681bbc}{draw\+\_\+letter}} (int screenX, int screenY, xpm\+\_\+map\+\_\+t letter)
+\begin{DoxyCompactList}\small\item\em Draws the letter \textquotesingle{}letter\textquotesingle{} in the position (screenX, screenY) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga42f4903ab89aff9e3ee0206c52cf710a}{draw\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Draws the mouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga2c9f74a0609e6d9e770ebea59a4d12a1}{update\+\_\+mouse\+\_\+position}} (int \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, int \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}})
+\begin{DoxyCompactList}\small\item\em updates mouse x position and y position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga8b6c981db3aad686de04545c1e87f33c}{draw\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the menu, Play button, Instructions Button and Exit button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga91fbb4c4f500ee2b1f21b05a6674b1d3}{draw\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em Draws the pause menu, Resume button, Instructions Button and Exit button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gae24016b882b40300bbfb484d88b32398}{draw\+\_\+game\+\_\+cards}} ()
+\begin{DoxyCompactList}\small\item\em Draws the board, the background and the cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga9496e4380bbed6f786f33fa7edfeb0cf}{draw\+\_\+victory}} ()
+\begin{DoxyCompactList}\small\item\em Draws the victory img. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gaa37e76033505d7f48a87284bd85c48a2}{draw\+\_\+game\+\_\+over}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game over img. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__game_ga09843b75080525ab8f5572265ac73d67}{flip\+ACard\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Flips a card that is facing up, to facing down. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__game_gafb7aed5673dc69ab9499029e10b844a3}{flip\+ACard\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Flips a card that is facing down, to facing up. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__game_ga66a16995651efeecccf372a75e5180aa}{flip\+All\+Cards\+Down}} ()
+\item 
+void \mbox{\hyperlink{group__game_gae1d711cffeb366be41887b57c2e8f8f2}{draw\+Hearts}} ()
+\begin{DoxyCompactList}\small\item\em Draws the players\textquotesingle{} lives. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga2ef25ec96c9e1523f3f6ac1edd081063}{draw\+Moon}} ()
+\begin{DoxyCompactList}\small\item\em Draws the MOOOON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga7d1ae903b8861ce290de1aefa9dc3545}{draw\+Sun}} ()
+\begin{DoxyCompactList}\small\item\em Draws the Sun. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gacbd5457c126570af763ea24dc41da830}{draw\+Background}} ()
+\begin{DoxyCompactList}\small\item\em Draws the Backgorund. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga0cf97fdd7eb71c16521fedab862db6a3}{draw\+Instructions}} ()
+\begin{DoxyCompactList}\small\item\em Draws the instructions of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga26035ccc4fc0e502497a6804294f1817}{flip\+Card\+On\+Click}} ()
+\begin{DoxyCompactList}\small\item\em Flips a card when the user clicks on it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}{card\+Number}} \mbox{\hyperlink{group__game_gab8f529375670ada86e8e1e6594e24a67}{get\+Card\+Number}} (int \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}})
+\begin{DoxyCompactList}\small\item\em Get the Card Number object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79}{card\+Suit}} \mbox{\hyperlink{group__game_ga95bd042452e6e4fd9ccf918834b0a966}{get\+Card\+Suit}} (int \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}})
+\begin{DoxyCompactList}\small\item\em Get the Card Suit object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{game_8c_a85da43887f7c5fec49b8e7eaf682b65e}{modeinfo}}
+\item 
+\mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}} \mbox{\hyperlink{game_8c_a67eb121323aaae7379613db3c4310a6a}{card\+Array}} \mbox{[}16\mbox{]}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_ab204b9834a50b5e5776db92d46e59446}{img\+Game\+Name}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_a668c67032019a5b8de8a6e3480c481e0}{sprite\+Game\+Name}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_ad19c240c19198ab012cd71f95714074f}{img\+Deck}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_afbf0a1be3cd5321ea1a4edddcc71314f}{sprite\+Deck}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a48445542320e159251dd1d3a51dce3cb}{img\+Card\+Back}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_abe388bd8424e01b16ac277426314bae9}{sprite\+Card\+Back}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a6083c1022483539d13875e39d5789131}{img\+Mouse}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_ab9c84cc3840f1663d8b2a0d5e525f60f}{sprite\+Mouse}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a1f0aaa361bca8ed90f47e2360b47ac40}{img\+Heart}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_a1962d394c203be8aa2066524a4b2df9a}{sprite\+Heart}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a9886ed0a4c2ecfec2498d74f619ed47c}{img\+Victory}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_a348dee04beeec0ecdd6fcdf29ec44b65}{sprite\+Victory}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a2919da1c207f8492c2e7da5a709bbb0b}{img\+Game\+Over}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_aee5692f14b392b20c255150d3f64e8d8}{sprite\+Game\+Over}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a4797c5447e118fd03adcac4e0a865be3}{img\+Instructions}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_acc346c6c2f4960e46c89547f805b1d01}{sprite\+Instructions}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a855d3f8fa972119b46346745cce4f3a2}{img\+Moon}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_a8951b4a683ec578ad8bea9e8fb2fc12f}{sprite\+Moon}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a46e53e437f6d11015549716990183fc7}{img\+Sun}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_a009b2ee21bcc76d2fd57f3805b6e3456}{sprite\+Sun}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{game_8c_a57754b312a1259887083b4e686c5ec60}{img\+Background}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{game_8c_ae80d785421df9d3124cb4bbb4a81efda}{sprite\+Background}}
+\item 
+\mbox{\hyperlink{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}{Player}} \mbox{\hyperlink{game_8c_a84ca794211044aa1810646b2e9b6177e}{p1}}
+\item 
+int \mbox{\hyperlink{game_8c_ade21d10bee9633c41085724b530960c2}{increase\+Width}} = 1
+\item 
+bool \mbox{\hyperlink{game_8c_a5df7f1ecf30cdbbee1eeabbdfb38e597}{sprite\+Front}} = false
+\item 
+int \mbox{\hyperlink{game_8c_a6cb33affff5f12d95109924afb3f2983}{other\+Side}} \mbox{[}16\mbox{]} = \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\}
+\item 
+\mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{game_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{game_8c_a67eb121323aaae7379613db3c4310a6a}\label{game_8c_a67eb121323aaae7379613db3c4310a6a}} 
+\index{game.c@{game.c}!cardArray@{cardArray}}
+\index{cardArray@{cardArray}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{cardArray}{cardArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}} card\+Array\mbox{[}16\mbox{]}}
+
+\mbox{\Hypertarget{game_8c_a57754b312a1259887083b4e686c5ec60}\label{game_8c_a57754b312a1259887083b4e686c5ec60}} 
+\index{game.c@{game.c}!imgBackground@{imgBackground}}
+\index{imgBackground@{imgBackground}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgBackground}{imgBackground}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Background}
+
+\mbox{\Hypertarget{game_8c_a48445542320e159251dd1d3a51dce3cb}\label{game_8c_a48445542320e159251dd1d3a51dce3cb}} 
+\index{game.c@{game.c}!imgCardBack@{imgCardBack}}
+\index{imgCardBack@{imgCardBack}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgCardBack}{imgCardBack}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Card\+Back\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{game_8c_ad19c240c19198ab012cd71f95714074f}\label{game_8c_ad19c240c19198ab012cd71f95714074f}} 
+\index{game.c@{game.c}!imgDeck@{imgDeck}}
+\index{imgDeck@{imgDeck}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgDeck}{imgDeck}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Deck\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{game_8c_ab204b9834a50b5e5776db92d46e59446}\label{game_8c_ab204b9834a50b5e5776db92d46e59446}} 
+\index{game.c@{game.c}!imgGameName@{imgGameName}}
+\index{imgGameName@{imgGameName}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgGameName}{imgGameName}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Game\+Name}
+
+\mbox{\Hypertarget{game_8c_a2919da1c207f8492c2e7da5a709bbb0b}\label{game_8c_a2919da1c207f8492c2e7da5a709bbb0b}} 
+\index{game.c@{game.c}!imgGameOver@{imgGameOver}}
+\index{imgGameOver@{imgGameOver}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgGameOver}{imgGameOver}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Game\+Over}
+
+\mbox{\Hypertarget{game_8c_a1f0aaa361bca8ed90f47e2360b47ac40}\label{game_8c_a1f0aaa361bca8ed90f47e2360b47ac40}} 
+\index{game.c@{game.c}!imgHeart@{imgHeart}}
+\index{imgHeart@{imgHeart}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgHeart}{imgHeart}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Heart}
+
+\mbox{\Hypertarget{game_8c_a4797c5447e118fd03adcac4e0a865be3}\label{game_8c_a4797c5447e118fd03adcac4e0a865be3}} 
+\index{game.c@{game.c}!imgInstructions@{imgInstructions}}
+\index{imgInstructions@{imgInstructions}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgInstructions}{imgInstructions}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Instructions}
+
+\mbox{\Hypertarget{game_8c_a855d3f8fa972119b46346745cce4f3a2}\label{game_8c_a855d3f8fa972119b46346745cce4f3a2}} 
+\index{game.c@{game.c}!imgMoon@{imgMoon}}
+\index{imgMoon@{imgMoon}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgMoon}{imgMoon}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Moon}
+
+\mbox{\Hypertarget{game_8c_a6083c1022483539d13875e39d5789131}\label{game_8c_a6083c1022483539d13875e39d5789131}} 
+\index{game.c@{game.c}!imgMouse@{imgMouse}}
+\index{imgMouse@{imgMouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgMouse}{imgMouse}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Mouse}
+
+\mbox{\Hypertarget{game_8c_a46e53e437f6d11015549716990183fc7}\label{game_8c_a46e53e437f6d11015549716990183fc7}} 
+\index{game.c@{game.c}!imgSun@{imgSun}}
+\index{imgSun@{imgSun}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgSun}{imgSun}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Sun}
+
+\mbox{\Hypertarget{game_8c_a9886ed0a4c2ecfec2498d74f619ed47c}\label{game_8c_a9886ed0a4c2ecfec2498d74f619ed47c}} 
+\index{game.c@{game.c}!imgVictory@{imgVictory}}
+\index{imgVictory@{imgVictory}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{imgVictory}{imgVictory}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Victory}
+
+\mbox{\Hypertarget{game_8c_ade21d10bee9633c41085724b530960c2}\label{game_8c_ade21d10bee9633c41085724b530960c2}} 
+\index{game.c@{game.c}!increaseWidth@{increaseWidth}}
+\index{increaseWidth@{increaseWidth}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{increaseWidth}{increaseWidth}}
+{\footnotesize\ttfamily int increase\+Width = 1}
+
+\mbox{\Hypertarget{game_8c_a85da43887f7c5fec49b8e7eaf682b65e}\label{game_8c_a85da43887f7c5fec49b8e7eaf682b65e}} 
+\index{game.c@{game.c}!modeinfo@{modeinfo}}
+\index{modeinfo@{modeinfo}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{modeinfo}{modeinfo}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t modeinfo\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{game_8c_a07faa847230d0abd8c3db00e3f8cae7a}\label{game_8c_a07faa847230d0abd8c3db00e3f8cae7a}} 
+\index{game.c@{game.c}!mouse@{mouse}}
+\index{mouse@{mouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mouse}{Mouse}} mouse}
+
+\mbox{\Hypertarget{game_8c_a6cb33affff5f12d95109924afb3f2983}\label{game_8c_a6cb33affff5f12d95109924afb3f2983}} 
+\index{game.c@{game.c}!otherSide@{otherSide}}
+\index{otherSide@{otherSide}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{otherSide}{otherSide}}
+{\footnotesize\ttfamily int other\+Side\mbox{[}16\mbox{]} = \{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0\}}
+
+\mbox{\Hypertarget{game_8c_a84ca794211044aa1810646b2e9b6177e}\label{game_8c_a84ca794211044aa1810646b2e9b6177e}} 
+\index{game.c@{game.c}!p1@{p1}}
+\index{p1@{p1}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}{Player}} p1}
+
+\mbox{\Hypertarget{game_8c_ae80d785421df9d3124cb4bbb4a81efda}\label{game_8c_ae80d785421df9d3124cb4bbb4a81efda}} 
+\index{game.c@{game.c}!spriteBackground@{spriteBackground}}
+\index{spriteBackground@{spriteBackground}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteBackground}{spriteBackground}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Background}
+
+\mbox{\Hypertarget{game_8c_abe388bd8424e01b16ac277426314bae9}\label{game_8c_abe388bd8424e01b16ac277426314bae9}} 
+\index{game.c@{game.c}!spriteCardBack@{spriteCardBack}}
+\index{spriteCardBack@{spriteCardBack}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteCardBack}{spriteCardBack}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Card\+Back\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{game_8c_afbf0a1be3cd5321ea1a4edddcc71314f}\label{game_8c_afbf0a1be3cd5321ea1a4edddcc71314f}} 
+\index{game.c@{game.c}!spriteDeck@{spriteDeck}}
+\index{spriteDeck@{spriteDeck}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteDeck}{spriteDeck}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Deck\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{game_8c_a5df7f1ecf30cdbbee1eeabbdfb38e597}\label{game_8c_a5df7f1ecf30cdbbee1eeabbdfb38e597}} 
+\index{game.c@{game.c}!spriteFront@{spriteFront}}
+\index{spriteFront@{spriteFront}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteFront}{spriteFront}}
+{\footnotesize\ttfamily bool sprite\+Front = false}
+
+\mbox{\Hypertarget{game_8c_a668c67032019a5b8de8a6e3480c481e0}\label{game_8c_a668c67032019a5b8de8a6e3480c481e0}} 
+\index{game.c@{game.c}!spriteGameName@{spriteGameName}}
+\index{spriteGameName@{spriteGameName}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteGameName}{spriteGameName}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Game\+Name}
+
+\mbox{\Hypertarget{game_8c_aee5692f14b392b20c255150d3f64e8d8}\label{game_8c_aee5692f14b392b20c255150d3f64e8d8}} 
+\index{game.c@{game.c}!spriteGameOver@{spriteGameOver}}
+\index{spriteGameOver@{spriteGameOver}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteGameOver}{spriteGameOver}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Game\+Over}
+
+\mbox{\Hypertarget{game_8c_a1962d394c203be8aa2066524a4b2df9a}\label{game_8c_a1962d394c203be8aa2066524a4b2df9a}} 
+\index{game.c@{game.c}!spriteHeart@{spriteHeart}}
+\index{spriteHeart@{spriteHeart}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteHeart}{spriteHeart}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Heart}
+
+\mbox{\Hypertarget{game_8c_acc346c6c2f4960e46c89547f805b1d01}\label{game_8c_acc346c6c2f4960e46c89547f805b1d01}} 
+\index{game.c@{game.c}!spriteInstructions@{spriteInstructions}}
+\index{spriteInstructions@{spriteInstructions}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteInstructions}{spriteInstructions}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Instructions}
+
+\mbox{\Hypertarget{game_8c_a8951b4a683ec578ad8bea9e8fb2fc12f}\label{game_8c_a8951b4a683ec578ad8bea9e8fb2fc12f}} 
+\index{game.c@{game.c}!spriteMoon@{spriteMoon}}
+\index{spriteMoon@{spriteMoon}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteMoon}{spriteMoon}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Moon}
+
+\mbox{\Hypertarget{game_8c_ab9c84cc3840f1663d8b2a0d5e525f60f}\label{game_8c_ab9c84cc3840f1663d8b2a0d5e525f60f}} 
+\index{game.c@{game.c}!spriteMouse@{spriteMouse}}
+\index{spriteMouse@{spriteMouse}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteMouse}{spriteMouse}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Mouse}
+
+\mbox{\Hypertarget{game_8c_a009b2ee21bcc76d2fd57f3805b6e3456}\label{game_8c_a009b2ee21bcc76d2fd57f3805b6e3456}} 
+\index{game.c@{game.c}!spriteSun@{spriteSun}}
+\index{spriteSun@{spriteSun}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteSun}{spriteSun}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Sun}
+
+\mbox{\Hypertarget{game_8c_a348dee04beeec0ecdd6fcdf29ec44b65}\label{game_8c_a348dee04beeec0ecdd6fcdf29ec44b65}} 
+\index{game.c@{game.c}!spriteVictory@{spriteVictory}}
+\index{spriteVictory@{spriteVictory}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{spriteVictory}{spriteVictory}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Victory}
+

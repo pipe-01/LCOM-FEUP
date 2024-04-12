@@ -1,0 +1,112 @@
+\hypertarget{group__utils}{}\doxysection{utils}
+\label{group__utils}\index{utils@{utils}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(\mbox{\hyperlink{pixmap_8h_a4d320d324a7c0351baad6608e85556c7}{n}})~(1 $<$$<$ (\mbox{\hyperlink{pixmap_8h_a4d320d324a7c0351baad6608e85556c7}{n}}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__utils_ga81621440b3d65680979425e39aa8c789}{util\+\_\+get\+\_\+\+LSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$lsb)
+\begin{DoxyCompactList}\small\item\em Returns the LSB of a 2 byte integer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__utils_ga6a880076cd2ec468834438b6e0c58836}{util\+\_\+get\+\_\+\+MSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$msb)
+\begin{DoxyCompactList}\small\item\em Returns the MSB of a 2 byte integer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}{util\+\_\+sys\+\_\+inb}} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Invokes sys\+\_\+inb() system call but reads the value into a uint8\+\_\+t variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+LCOM\textquotesingle{}s utility functions 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__utils_ga3a8ea58898cb58fc96013383d39f482c}\label{group__utils_ga3a8ea58898cb58fc96013383d39f482c}} 
+\index{utils@{utils}!BIT@{BIT}}
+\index{BIT@{BIT}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{BIT}{BIT}}
+{\footnotesize\ttfamily \#define BIT(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{pixmap_8h_a4d320d324a7c0351baad6608e85556c7}{n}} }\end{DoxyParamCaption})~(1 $<$$<$ (\mbox{\hyperlink{pixmap_8h_a4d320d324a7c0351baad6608e85556c7}{n}}))}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__utils_ga81621440b3d65680979425e39aa8c789}\label{group__utils_ga81621440b3d65680979425e39aa8c789}} 
+\index{utils@{utils}!util\_get\_LSB@{util\_get\_LSB}}
+\index{util\_get\_LSB@{util\_get\_LSB}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_get\_LSB()}{util\_get\_LSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+LSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{lsb }\end{DoxyParamCaption})}
+
+
+
+Returns the LSB of a 2 byte integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & input 2 byte integer \\
+\hline
+{\em lsb} & address of memory location to be updated with val\textquotesingle{}s LSB \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{group__utils_ga81621440b3d65680979425e39aa8c789_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_ga6a880076cd2ec468834438b6e0c58836}\label{group__utils_ga6a880076cd2ec468834438b6e0c58836}} 
+\index{utils@{utils}!util\_get\_MSB@{util\_get\_MSB}}
+\index{util\_get\_MSB@{util\_get\_MSB}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_get\_MSB()}{util\_get\_MSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+MSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{msb }\end{DoxyParamCaption})}
+
+
+
+Returns the MSB of a 2 byte integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & input 2 byte integer \\
+\hline
+{\em msb} & address of memory location to be updated with val\textquotesingle{}s LSB \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{group__utils_ga6a880076cd2ec468834438b6e0c58836_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}\label{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}} 
+\index{utils@{utils}!util\_sys\_inb@{util\_sys\_inb}}
+\index{util\_sys\_inb@{util\_sys\_inb}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_sys\_inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int() util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Invokes sys\+\_\+inb() system call but reads the value into a uint8\+\_\+t variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & the input port that is to be read \\
+\hline
+{\em value} & address of 8-\/bit variable to be update with the value read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4_icgraph}
+\end{center}
+\end{figure}

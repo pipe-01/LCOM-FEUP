@@ -1,0 +1,48 @@
+\hypertarget{structs_8h_source}{}\doxysection{structs.\+h}
+\mbox{\hyperlink{structs_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <lcom/lcf.h>}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_board_struct}{BoardStruct}}\{}
+\DoxyCodeLine{4     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_board_struct_a6217be8b57e1c297b78e59ceeb31896f}{matrix}}[4][4];}
+\DoxyCodeLine{5 \} \mbox{\hyperlink{structs_8h_a6446443296d14a2144ade9ccee9f01e3}{Board}};}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_player_struct}{PlayerStruct}}\{}
+\DoxyCodeLine{8     \textcolor{keywordtype}{char} *\mbox{\hyperlink{struct_player_struct_a5ac083a645d964373f022d03df4849c8}{name}};}
+\DoxyCodeLine{9     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_player_struct_a5b6f67c2402ab532f12e2422ddd2f5e4}{lives}}; }
+\DoxyCodeLine{10     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_player_struct_aabfb502219a0916360c29c8ba710b3c6}{isAlive}};}
+\DoxyCodeLine{11     \textcolor{keywordtype}{float} \mbox{\hyperlink{struct_player_struct_a1af2c700394365cca7c5f4ce0d90e9f0}{bestTime}};}
+\DoxyCodeLine{12 \} \mbox{\hyperlink{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}{Player}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{15     \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a9ccde65e4e1405d6d9c81a289157c23e}{Ace}} = 1,\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a8f23576efb89e6d93059e33057415b06}{Two}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a14deafe746247fb6f76771246dfb16b5}{Three}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a56504d7f6f1ef88c211d788b514d53d1}{Four}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1af107e3c0debe405b548ccedcc0827556}{Five}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1adcab63275dbc01b24e35a888c9deb038}{Six}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1adfe47319322dfc26ab2dadffb14a82d6}{Seven}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a668c1161f4b782a9143550f1eadce441}{Eight}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a087299c5c26e659be9c9e37c83e156e1}{Nine}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a4ced2c529d7f3b3c75a88d22804aaf68}{Ten}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a2ec72fcdab4d4d6939dc07c04a87dc78}{Jack}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a011d63789e83d8beb2a90652bb03cd31}{Queen}},\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a27fc6acdd76c4d0f3b47933e02ec65cf}{King}}}
+\DoxyCodeLine{16 \} \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}{cardNumber}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{19     \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79ac6f56840ac624f1f59494b1e7bf8228b}{Spades}}, \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79a0649491cb4f90861f7bac5ecb2c36934}{Clubs}}, \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79a9047ff5b23de8655a61159cf1018f726}{Hearts}}, \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79a91cacf2c1b2e420ddc6120dc38d791fa}{Diamonds}}}
+\DoxyCodeLine{20 \} \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79}{cardSuit}};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{23     \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62ae0f2dbf2f226e6c1acccabc9b146e3d7}{Menu}}, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62af123d77469a9e184943728efb5801ce9}{Game}}, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62adaba8aa0fcd8a87c25fec7d916c789e7}{Pause}}, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62a3e8c6b924e25e1dabacd8a58630e6da8}{HighScores}},\mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62a86fde7a60a8f37a076216f35b0ce3bda}{Instructions}}, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62aed2fed565c58a841153245e9d3b94c3b}{Exit}}, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62a9779a7e9f14b8a5b1d7640a1ff0dab26}{Wait}}}
+\DoxyCodeLine{24 \} \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62}{gameState}};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_cards}{Cards}}\{}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_cards_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{struct_cards_a0a2f84ed7838f07779ae24c5a9086d33}{y}};}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_cards_aee720933149aeefca84609842a59452d}{isFlipped}};}
+\DoxyCodeLine{29     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_cards_a106e4537c8ad4064a608c545b0d09d70}{isFlipping}};}
+\DoxyCodeLine{30     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_cards_a8fcc16c69b64227cac8867d2a48ee519}{flipSuccess}};}
+\DoxyCodeLine{31     \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}{cardNumber}} \mbox{\hyperlink{struct_cards_ad4f5883805f9ec5cd7af1d69fdea3f25}{num}};}
+\DoxyCodeLine{32     \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79}{cardSuit}} \mbox{\hyperlink{struct_cards_a8ff2ab668210dc02bbf4eefd4cd7f262}{suit}};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \} \mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_mouse}{Mouse}}\{}
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_mouse_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{struct_mouse_a0a2f84ed7838f07779ae24c5a9086d33}{y}};}
+\DoxyCodeLine{38 \} \mbox{\hyperlink{structs_8h_a95bb0982df74f13bba35dc2e207c34d4}{Mouse}};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{struct_date}{Date}}\{}
+\DoxyCodeLine{41     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_date_a2398ea43f7d25f677616371d3b545f59}{day}}, \mbox{\hyperlink{struct_date_a8c07e017c7b80f536d05c6134cae89ef}{month}}, \mbox{\hyperlink{struct_date_a9c83bbc97dcf2390b043382b4dfe3c98}{year}};}
+\DoxyCodeLine{42     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_date_aa64c18c25aeef9a0d7c92d89fa24a636}{hour}}, \mbox{\hyperlink{struct_date_a7ff63df03ff6549639b712d24a94adef}{minute}}, \mbox{\hyperlink{struct_date_a7ab95bf164c7490d2855a7efcea6784a}{second}};}
+\DoxyCodeLine{43 \} \mbox{\hyperlink{structs_8h_a8b9ee38bb5e4c1674ffc937bb1b783fd}{Date}};}
+
+\end{DoxyCode}

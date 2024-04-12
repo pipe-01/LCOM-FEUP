@@ -1,0 +1,8 @@
+<map id="keyboard.c" name="keyboard.c">
+<area shape="rect" id="node1" title=" " alt="" coords="112,5,199,32"/>
+<area shape="rect" id="node2" href="$keyboard_8h.html" title=" " alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node3" href="$i8042_8h.html" title=" " alt="" coords="61,155,125,181"/>
+<area shape="rect" id="node5" href="$i8254_8h.html" title=" " alt="" coords="149,155,213,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="218,80,279,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="97,229,176,256"/>
+</map>

@@ -1,0 +1,28 @@
+\hypertarget{keyboard_8h_source}{}\doxysection{keyboard.\+h}
+\mbox{\hyperlink{keyboard_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef KEYBOARD\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define KEYBOARD\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{i8042_8h}{i8042.h}}"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{extern} uint8\_t \mbox{\hyperlink{keyboard_8h_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}};}
+\DoxyCodeLine{7 \textcolor{keyword}{extern} \textcolor{keywordtype}{int} \mbox{\hyperlink{keyboard_8h_a3e18e5ab1201e205ce88c473a2f4bf99}{bytes}};}
+\DoxyCodeLine{8 \textcolor{keyword}{extern} uint8\_t \mbox{\hyperlink{keyboard_8h_a4cbc2430b3efdd26ec74f5d43d4fd9a3}{scancodes}}[2];}
+\DoxyCodeLine{9 \textcolor{keyword}{extern} \textcolor{keywordtype}{bool} \mbox{\hyperlink{keyboard_8h_a83b83f0755f115b133c5afa21cbcfd1b}{makecode}};}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{23 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__keyboard_ga86759203ec8ed160a094b1f17b0ad084}{kbc\_subscribe}}(uint8\_t *bit\_no);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{30 \textcolor{keywordtype}{int} \mbox{\hyperlink{group__keyboard_gad76a10e1c3df32c355a1b0ab8c015e3d}{kbc\_unsubscribe}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{38 \textcolor{keywordtype}{bool} \mbox{\hyperlink{group__keyboard_gae98d2188f25f699678d9aa9372441844}{printSC}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{47 uint8\_t \mbox{\hyperlink{group__keyboard_gaa46f02b061a98185b8df6e4cc1a1c23c}{writeCommand}}(uint8\_t cmd, uint8\_t port);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{54 uint8\_t \mbox{\hyperlink{group__keyboard_gabbe0c9700f4970531bcaba93aeed666c}{readData}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{61 uint8\_t \mbox{\hyperlink{group__keyboard_ga240affc37531919dd1bdf3d8c27a64d4}{kbcEnableInterrutpt}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

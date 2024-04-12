@@ -1,0 +1,6 @@
+<map id="flipAllCardsDown" name="flipAllCardsDown">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,124,83"/>
+<area shape="rect" id="node2" href="$group__game.html#gabd7266acf9159cb22ea03bec1f95b720" title="Get the Cards Screen X Y object." alt="" coords="173,5,303,32"/>
+<area shape="rect" id="node3" href="$group__video.html#ga280e76a809cc7f8a67508b9cd7a68a44" title="Makes part of the screen green." alt="" coords="172,56,304,83"/>
+<area shape="rect" id="node4" href="$group__video.html#gaf61659f103bf1d72b97b5cc69a3f0d3c" title="Draws a pixel." alt="" coords="352,81,460,108"/>
+</map>

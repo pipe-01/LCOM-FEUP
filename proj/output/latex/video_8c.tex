@@ -1,0 +1,89 @@
+\hypertarget{video_8c}{}\doxysection{video.\+c File Reference}
+\label{video_8c}\index{video.c@{video.c}}
+{\ttfamily \#include \char`\"{}video.\+h\char`\"{}}\newline
+Include dependency graph for video.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__video_gac67621adf87bcebb04fab536c7245315}{vg\+\_\+start}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Starts the video\+\_\+card in mode \textquotesingle{}mode\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_ga28e24d4a4f8c58583aeb9c91b991d8eb}{my\+\_\+update\+Video\+Mem}} ()
+\begin{DoxyCompactList}\small\item\em Copies the buffer (color of each pixel) into the memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_ga22cd19f7ba8863c00392613422fb7be7}{green\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Makes every pixel of the screen green. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__video_ga280e76a809cc7f8a67508b9cd7a68a44}{green\+Part\+Of\+Screen}} (int \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, int \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}}, int width, int height)
+\begin{DoxyCompactList}\small\item\em Makes part of the screen green. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_gaf61659f103bf1d72b97b5cc69a3f0d3c}{my\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}}, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__video_gac139142181a96961cc91e2fdb8738d17}{vg\+\_\+draw\+\_\+card}} (int screenX, int screenY, int positionX, int positionY)
+\item 
+void \mbox{\hyperlink{group__video_gafa847549e9dc6e4f49f651623bc456dc}{clear\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em free the memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \mbox{\hyperlink{video_8c_a93a24e067b9083bed6fb5c0336fd7a01}{video\+\_\+mem}}
+\item 
+static char $\ast$ \mbox{\hyperlink{video_8c_aff2566f4c366b48d73479bef43ee4d2e}{buffer}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{video_8c_ad19c240c19198ab012cd71f95714074f}{img\+Deck}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{video_8c_afbf0a1be3cd5321ea1a4edddcc71314f}{sprite\+Deck}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{video_8c_a48445542320e159251dd1d3a51dce3cb}{img\+Card\+Back}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{video_8c_abe388bd8424e01b16ac277426314bae9}{sprite\+Card\+Back}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{video_8c_a85da43887f7c5fec49b8e7eaf682b65e}{modeinfo}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{video_8c_aff2566f4c366b48d73479bef43ee4d2e}\label{video_8c_aff2566f4c366b48d73479bef43ee4d2e}} 
+\index{video.c@{video.c}!buffer@{buffer}}
+\index{buffer@{buffer}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily char$\ast$ buffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video_8c_a48445542320e159251dd1d3a51dce3cb}\label{video_8c_a48445542320e159251dd1d3a51dce3cb}} 
+\index{video.c@{video.c}!imgCardBack@{imgCardBack}}
+\index{imgCardBack@{imgCardBack}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{imgCardBack}{imgCardBack}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Card\+Back}
+
+\mbox{\Hypertarget{video_8c_ad19c240c19198ab012cd71f95714074f}\label{video_8c_ad19c240c19198ab012cd71f95714074f}} 
+\index{video.c@{video.c}!imgDeck@{imgDeck}}
+\index{imgDeck@{imgDeck}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{imgDeck}{imgDeck}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Deck}
+
+\mbox{\Hypertarget{video_8c_a85da43887f7c5fec49b8e7eaf682b65e}\label{video_8c_a85da43887f7c5fec49b8e7eaf682b65e}} 
+\index{video.c@{video.c}!modeinfo@{modeinfo}}
+\index{modeinfo@{modeinfo}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{modeinfo}{modeinfo}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t modeinfo}
+
+\mbox{\Hypertarget{video_8c_abe388bd8424e01b16ac277426314bae9}\label{video_8c_abe388bd8424e01b16ac277426314bae9}} 
+\index{video.c@{video.c}!spriteCardBack@{spriteCardBack}}
+\index{spriteCardBack@{spriteCardBack}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{spriteCardBack}{spriteCardBack}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Card\+Back}
+
+\mbox{\Hypertarget{video_8c_afbf0a1be3cd5321ea1a4edddcc71314f}\label{video_8c_afbf0a1be3cd5321ea1a4edddcc71314f}} 
+\index{video.c@{video.c}!spriteDeck@{spriteDeck}}
+\index{spriteDeck@{spriteDeck}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{spriteDeck}{spriteDeck}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Deck}
+
+\mbox{\Hypertarget{video_8c_a93a24e067b9083bed6fb5c0336fd7a01}\label{video_8c_a93a24e067b9083bed6fb5c0336fd7a01}} 
+\index{video.c@{video.c}!video\_mem@{video\_mem}}
+\index{video\_mem@{video\_mem}!video.c@{video.c}}
+\doxysubsubsection{\texorpdfstring{video\_mem}{video\_mem}}
+{\footnotesize\ttfamily char$\ast$ video\+\_\+mem\hspace{0.3cm}{\ttfamily [static]}}
+

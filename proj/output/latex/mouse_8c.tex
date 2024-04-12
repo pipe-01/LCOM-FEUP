@@ -1,0 +1,111 @@
+\hypertarget{mouse_8c}{}\doxysection{mouse.\+c File Reference}
+\label{mouse_8c}\index{mouse.c@{mouse.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+Include dependency graph for mouse.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{mouse_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga58140ce4b013e279247e5b4054586589}{mouse\+\_\+subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes the mouse. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f}{mouse\+\_\+unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unubscribes the mouse. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga92e4a14386ad2dbd01ebf126a76da677}{write\+\_\+argument\+\_\+to\+\_\+mouse}} (uint8\+\_\+t argument)
+\begin{DoxyCompactList}\small\item\em Writes the argument to the input\+\_\+buffer after sending the 0x\+D4 and reads the acknolege from output\+\_\+buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga866efc30e91b75112023958dc0348148}{enable\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Sets the stream mode and enables the mouse data. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga632a86d84609ae8e832ee5cb4cf226a0}{disable\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Disables the mouse data and sets the stream mode. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{mouse_8c_af72786308df3bd1b3d6b916bc077c4c3}{kbc\+\_\+read}} ()
+\item 
+void() \mbox{\hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mouse}{Mouse}} interrupt handler. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga052f2a8458c7e3f2af5c2f472e82db2d}{print\+\_\+mouse\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em updates the packets \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct packet \mbox{\hyperlink{mouse_8c_a82a4138e5c32cf373ad5e70a2af5e036}{packet1}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{mouse_8c_aab8af81e4a0fa7a938e96e7c2c13a64e}{read\+\_\+packet}}
+\item 
+bool \mbox{\hyperlink{mouse_8c_aa39c8fc4c2cec00ec7f94ecf5d56cb32}{is\+\_\+sync}} = false
+\item 
+int \mbox{\hyperlink{mouse_8c_a617a47c70795bcff659815ad0efd2266}{counter}} = 0
+\item 
+int \mbox{\hyperlink{mouse_8c_a0b0da21bbdff62b7b28e9af7ec3d0d76}{hook\+\_\+id\+\_\+mouse}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{mouse_8c_a35cd830d1a306a97dc8991f8eb723651}{total\+\_\+packets}} = 0
+\item 
+bool \mbox{\hyperlink{mouse_8c_a502c4aa5d1ba510994288df50ec1cc17}{reading\+\_\+error}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mouse_8c_af72786308df3bd1b3d6b916bc077c4c3}\label{mouse_8c_af72786308df3bd1b3d6b916bc077c4c3}} 
+\index{mouse.c@{mouse.c}!kbc\_read@{kbc\_read}}
+\index{kbc\_read@{kbc\_read}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_read()}{kbc\_read()}}
+{\footnotesize\ttfamily int() kbc\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{mouse_8c_af72786308df3bd1b3d6b916bc077c4c3_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mouse_8c_a617a47c70795bcff659815ad0efd2266}\label{mouse_8c_a617a47c70795bcff659815ad0efd2266}} 
+\index{mouse.c@{mouse.c}!counter@{counter}}
+\index{counter@{counter}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int counter = 0}
+
+\mbox{\Hypertarget{mouse_8c_a0b0da21bbdff62b7b28e9af7ec3d0d76}\label{mouse_8c_a0b0da21bbdff62b7b28e9af7ec3d0d76}} 
+\index{mouse.c@{mouse.c}!hook\_id\_mouse@{hook\_id\_mouse}}
+\index{hook\_id\_mouse@{hook\_id\_mouse}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id\_mouse}{hook\_id\_mouse}}
+{\footnotesize\ttfamily int hook\+\_\+id\+\_\+mouse}
+
+\mbox{\Hypertarget{mouse_8c_aa39c8fc4c2cec00ec7f94ecf5d56cb32}\label{mouse_8c_aa39c8fc4c2cec00ec7f94ecf5d56cb32}} 
+\index{mouse.c@{mouse.c}!is\_sync@{is\_sync}}
+\index{is\_sync@{is\_sync}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{is\_sync}{is\_sync}}
+{\footnotesize\ttfamily bool is\+\_\+sync = false}
+
+\mbox{\Hypertarget{mouse_8c_a82a4138e5c32cf373ad5e70a2af5e036}\label{mouse_8c_a82a4138e5c32cf373ad5e70a2af5e036}} 
+\index{mouse.c@{mouse.c}!packet1@{packet1}}
+\index{packet1@{packet1}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{packet1}{packet1}}
+{\footnotesize\ttfamily struct packet packet1}
+
+\mbox{\Hypertarget{mouse_8c_aab8af81e4a0fa7a938e96e7c2c13a64e}\label{mouse_8c_aab8af81e4a0fa7a938e96e7c2c13a64e}} 
+\index{mouse.c@{mouse.c}!read\_packet@{read\_packet}}
+\index{read\_packet@{read\_packet}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{read\_packet}{read\_packet}}
+{\footnotesize\ttfamily uint8\+\_\+t read\+\_\+packet}
+
+\mbox{\Hypertarget{mouse_8c_a502c4aa5d1ba510994288df50ec1cc17}\label{mouse_8c_a502c4aa5d1ba510994288df50ec1cc17}} 
+\index{mouse.c@{mouse.c}!reading\_error@{reading\_error}}
+\index{reading\_error@{reading\_error}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{reading\_error}{reading\_error}}
+{\footnotesize\ttfamily bool reading\+\_\+error = false}
+
+\mbox{\Hypertarget{mouse_8c_a35cd830d1a306a97dc8991f8eb723651}\label{mouse_8c_a35cd830d1a306a97dc8991f8eb723651}} 
+\index{mouse.c@{mouse.c}!total\_packets@{total\_packets}}
+\index{total\_packets@{total\_packets}!mouse.c@{mouse.c}}
+\doxysubsubsection{\texorpdfstring{total\_packets}{total\_packets}}
+{\footnotesize\ttfamily uint32\+\_\+t total\+\_\+packets = 0}
+

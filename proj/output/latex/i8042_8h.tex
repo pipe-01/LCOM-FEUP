@@ -1,0 +1,84 @@
+\hypertarget{i8042_8h}{}\doxysection{i8042.\+h File Reference}
+\label{i8042_8h}\index{i8042.h@{i8042.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for i8042.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{i8042_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{i8042_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaa554763d6a066605edecacdea834da9b}{WAIT\+\_\+\+KBC}}~20000
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga37360776bcc1dd3b5da93b025177551f}{IRQ1}}~1
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga8885a13da4dafeb2cb209ce1b7ec3107}{IRQ0}}~0
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga57276d1481230d81d2bba849f935ce5a}{IRQ12}}~12
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaa5e4f8bab5a1e8eb1d109460a3e53925}{P\+\_\+\+KEY\+\_\+\+BREAKCODE}}~0x99
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaac4dd08b673ef6953207144f88fc3ea9}{I\+\_\+\+KEY\+\_\+\+BREAKCODE}}~0x97
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga7724b8c1675449a8f91b341209413127}{E\+\_\+\+KEY\+\_\+\+BREAKCODE}}~0x92
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga87c955ebaf9c68c094fc60c6cabc5d9b}{STATUS\+\_\+\+KBC}}~0x64
+\item 
+\#define \mbox{\hyperlink{group__i8042_gaade608c2b485d0c1238c401e073bbbdc}{STATUS\+\_\+\+REGISTER}}~0x64
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga42623faaacf8f8d4d780650277a79856}{INPUT\+\_\+\+BUFFER\+\_\+\+COMMANDS}}~0x64
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga727f73f94247554b6c804fb2b6381761}{INPUT\+\_\+\+BUFFER\+\_\+\+ARGUMENTS}}~0x60
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga85dd25ad45d47136734196ec996419cd}{OUTPUT\+\_\+\+BUFFER}}~0x60
+\item 
+\#define \mbox{\hyperlink{group__i8042_ga21e5185acdcf7bf1005d75ec14590186}{OUT\+\_\+\+BUFF}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(0)
+\begin{DoxyCompactList}\small\item\em Output buffer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gacc061e13affe5f1303e9a7e1b28fcf42}{IN\+\_\+\+BUFF}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(1)
+\begin{DoxyCompactList}\small\item\em Input Buffer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga70ba5cfd6ec32ae0b141b32f232d5ca2}{SYS\+\_\+\+FLAG}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(2)
+\begin{DoxyCompactList}\small\item\em FLAG. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gaee0ffae6ee611d1d02b64b04b4ca7b3b}{DATA\+\_\+\+CMD}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(3)
+\begin{DoxyCompactList}\small\item\em Data Command 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gaea2ef6dda1aabebf291eeee29b66c04a}{KBC\+\_\+\+PAR\+\_\+\+ERR}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(7)
+\begin{DoxyCompactList}\small\item\em Keyboard parrity error. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gae31c3653f5881b02cbfdd4ccbb7ccf50}{KBC\+\_\+\+TO\+\_\+\+ERR}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(6)
+\begin{DoxyCompactList}\small\item\em Keyboard error 2. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gaefa4ad5f4ff688e721810f9196df660e}{READ\+\_\+\+COMMAND}}~0x20
+\begin{DoxyCompactList}\small\item\em Read Command. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gad1953a1338ab589f5dd289a90a904bec}{WRITE\+\_\+\+COMMAND}}~0x60
+\begin{DoxyCompactList}\small\item\em Write command. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga068afb0f0f4be2e069f02e92390a500c}{ISSUE\+\_\+\+COMMAND\+\_\+\+TO\+\_\+\+THE\+\_\+\+MOUSE}}~0x\+D4
+\begin{DoxyCompactList}\small\item\em COmmand to mouse. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga7342bb32df74802d9a72dff998b7ea96}{ENABLE\+\_\+\+MOUSE\+\_\+\+DATA}}~0x\+F4
+\begin{DoxyCompactList}\small\item\em Enable mouse data. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gada7373f670a58e8fe1fb66e10398e24a}{DISABLE\+\_\+\+MOUSE\+\_\+\+DATA}}~0x\+F5
+\begin{DoxyCompactList}\small\item\em Disable mouse data. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gaabf49b4a4d8ad72d202c8a7197058e35}{SET\+\_\+\+STREAM\+\_\+\+MODE}}~0x\+EA
+\begin{DoxyCompactList}\small\item\em Set stream mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga19a57d9d2eafd32ee130c0f526906719}{SET\+\_\+\+REMOTE\+\_\+\+MODE}}~0x\+F0
+\begin{DoxyCompactList}\small\item\em Set remote mode. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga4ebbc890861f4a6bdb9b0275112deb91}{READ\+\_\+\+DATA\+\_\+\+MOUSE}}~0x\+EB
+\begin{DoxyCompactList}\small\item\em Read data mouse. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gafd385537854a0874c4cd1633fab780b7}{RESET\+\_\+\+MOUSE}}~0x\+FF
+\begin{DoxyCompactList}\small\item\em Reset mouse. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_gafe4b0e625372cd38ec60150d6f5594b8}{ESCAPE}}~0x81
+\begin{DoxyCompactList}\small\item\em Escape. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga768cd6ee9a3460aad2b16a0e097dd060}{INVALID\+\_\+\+BYTE}}~0x\+FE
+\begin{DoxyCompactList}\small\item\em Invalid Byte. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga8f42a765a5cef471e7bc2a628f1a8859}{IS\+\_\+\+ERROR}}~0x\+FC
+\begin{DoxyCompactList}\small\item\em Is Error. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga0d10eae685a9b5c36c07ecc6b142264f}{IS\+\_\+\+OK}}~0x\+FA
+\begin{DoxyCompactList}\small\item\em OK. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__i8042_ga1a522aa19bcb695a9df30032a893bee3}{DELAY\+\_\+\+US}}~20000
+\begin{DoxyCompactList}\small\item\em DELAY. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="enable_mouse_data" name="enable_mouse_data">
+<area shape="rect" id="node1" title="Sets the stream mode and enables the mouse data." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$group__mouse.html#ga92e4a14386ad2dbd01ebf126a76da677" title="Writes the argument to the input_buffer after sending the 0xD4 and reads the acknolege from output_bu..." alt="" coords="192,5,367,32"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="415,5,505,32"/>
+</map>

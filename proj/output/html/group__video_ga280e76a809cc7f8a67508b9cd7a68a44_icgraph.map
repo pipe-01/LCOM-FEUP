@@ -1,0 +1,8 @@
+<map id="greenPartOfScreen" name="greenPartOfScreen">
+<area shape="rect" id="node1" title="Makes part of the screen green." alt="" coords="504,56,636,83"/>
+<area shape="rect" id="node2" href="$group__game.html#ga09843b75080525ab8f5572265ac73d67" title="Flips a card that is facing up, to facing down." alt="" coords="343,5,450,32"/>
+<area shape="rect" id="node5" href="$group__game.html#gafb7aed5673dc69ab9499029e10b844a3" title="Flips a card that is facing down, to facing up." alt="" coords="351,56,442,83"/>
+<area shape="rect" id="node6" href="$group__game.html#ga66a16995651efeecccf372a75e5180aa" title=" " alt="" coords="337,107,456,133"/>
+<area shape="rect" id="node3" href="$group__game.html#gae24016b882b40300bbfb484d88b32398" title="Draws the board, the background and the cards." alt="" coords="163,31,289,57"/>
+<area shape="rect" id="node4" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,115,57"/>
+</map>

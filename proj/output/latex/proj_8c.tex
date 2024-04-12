@@ -1,0 +1,344 @@
+\hypertarget{proj_8c}{}\doxysection{proj.\+c File Reference}
+\label{proj_8c}\index{proj.c@{proj.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pixmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for proj.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int() \mbox{\hyperlink{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}{proj\+\_\+main\+\_\+loop}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{proj_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{proj_8c_a85da43887f7c5fec49b8e7eaf682b65e}{modeinfo}}
+\item 
+int \mbox{\hyperlink{proj_8c_ab36b69a4a814040b896cf1d755163fe2}{tmr\+\_\+tck\+\_\+counter}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_ab204b9834a50b5e5776db92d46e59446}{img\+Game\+Name}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_a668c67032019a5b8de8a6e3480c481e0}{sprite\+Game\+Name}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_ad19c240c19198ab012cd71f95714074f}{img\+Deck}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_afbf0a1be3cd5321ea1a4edddcc71314f}{sprite\+Deck}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a48445542320e159251dd1d3a51dce3cb}{img\+Card\+Back}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_abe388bd8424e01b16ac277426314bae9}{sprite\+Card\+Back}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a6083c1022483539d13875e39d5789131}{img\+Mouse}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_ab9c84cc3840f1663d8b2a0d5e525f60f}{sprite\+Mouse}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a1f0aaa361bca8ed90f47e2360b47ac40}{img\+Heart}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_a1962d394c203be8aa2066524a4b2df9a}{sprite\+Heart}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a9886ed0a4c2ecfec2498d74f619ed47c}{img\+Victory}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_a348dee04beeec0ecdd6fcdf29ec44b65}{sprite\+Victory}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a2919da1c207f8492c2e7da5a709bbb0b}{img\+Game\+Over}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_aee5692f14b392b20c255150d3f64e8d8}{sprite\+Game\+Over}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a4797c5447e118fd03adcac4e0a865be3}{img\+Instructions}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_acc346c6c2f4960e46c89547f805b1d01}{sprite\+Instructions}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a855d3f8fa972119b46346745cce4f3a2}{img\+Moon}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_a8951b4a683ec578ad8bea9e8fb2fc12f}{sprite\+Moon}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a46e53e437f6d11015549716990183fc7}{img\+Sun}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_a009b2ee21bcc76d2fd57f3805b6e3456}{sprite\+Sun}}
+\item 
+xpm\+\_\+image\+\_\+t \mbox{\hyperlink{proj_8c_a57754b312a1259887083b4e686c5ec60}{img\+Background}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{proj_8c_ae80d785421df9d3124cb4bbb4a81efda}{sprite\+Background}}
+\item 
+\mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}} \mbox{\hyperlink{proj_8c_a67eb121323aaae7379613db3c4310a6a}{card\+Array}} \mbox{[}16\mbox{]}
+\item 
+\mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{proj_8c_a07faa847230d0abd8c3db00e3f8cae7a}{mouse}}
+\item 
+struct packet \mbox{\hyperlink{proj_8c_a82a4138e5c32cf373ad5e70a2af5e036}{packet1}}
+\item 
+int \mbox{\hyperlink{proj_8c_a617a47c70795bcff659815ad0efd2266}{counter}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{proj_8c_aab8af81e4a0fa7a938e96e7c2c13a64e}{read\+\_\+packet}}
+\item 
+bool \mbox{\hyperlink{proj_8c_a502c4aa5d1ba510994288df50ec1cc17}{reading\+\_\+error}}
+\item 
+\mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{proj_8c_a1dc6df4f5eac6300e1bb1f8dce3a10fd}{date}}
+\item 
+\mbox{\hyperlink{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}{Player}} \mbox{\hyperlink{proj_8c_a84ca794211044aa1810646b2e9b6177e}{p1}}
+\item 
+bool \mbox{\hyperlink{proj_8c_a9faa927d445247047db89f8dfd0960a0}{initial\+All\+Cards\+Flip}} = true
+\item 
+bool \mbox{\hyperlink{proj_8c_a957d5e21986c46f2a978e2fffa449232}{is\+Any\+Card\+Flipping}} = false
+\item 
+int \mbox{\hyperlink{proj_8c_a37ef625961cf24626a8a3d178beca61c}{max\+Num\+Of\+Cards\+Flipped}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{proj.c@{proj.c}!main@{main}}
+\index{main@{main}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}\label{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}} 
+\index{proj.c@{proj.c}!proj\_main\_loop@{proj\_main\_loop}}
+\index{proj\_main\_loop@{proj\_main\_loop}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{proj\_main\_loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily int() proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{proj_8c_a67eb121323aaae7379613db3c4310a6a}\label{proj_8c_a67eb121323aaae7379613db3c4310a6a}} 
+\index{proj.c@{proj.c}!cardArray@{cardArray}}
+\index{cardArray@{cardArray}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{cardArray}{cardArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}} card\+Array\mbox{[}16\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a617a47c70795bcff659815ad0efd2266}\label{proj_8c_a617a47c70795bcff659815ad0efd2266}} 
+\index{proj.c@{proj.c}!counter@{counter}}
+\index{counter@{counter}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a1dc6df4f5eac6300e1bb1f8dce3a10fd}\label{proj_8c_a1dc6df4f5eac6300e1bb1f8dce3a10fd}} 
+\index{proj.c@{proj.c}!date@{date}}
+\index{date@{date}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_date}{Date}} date\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a57754b312a1259887083b4e686c5ec60}\label{proj_8c_a57754b312a1259887083b4e686c5ec60}} 
+\index{proj.c@{proj.c}!imgBackground@{imgBackground}}
+\index{imgBackground@{imgBackground}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgBackground}{imgBackground}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Background\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a48445542320e159251dd1d3a51dce3cb}\label{proj_8c_a48445542320e159251dd1d3a51dce3cb}} 
+\index{proj.c@{proj.c}!imgCardBack@{imgCardBack}}
+\index{imgCardBack@{imgCardBack}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgCardBack}{imgCardBack}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Card\+Back\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_ad19c240c19198ab012cd71f95714074f}\label{proj_8c_ad19c240c19198ab012cd71f95714074f}} 
+\index{proj.c@{proj.c}!imgDeck@{imgDeck}}
+\index{imgDeck@{imgDeck}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgDeck}{imgDeck}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Deck\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_ab204b9834a50b5e5776db92d46e59446}\label{proj_8c_ab204b9834a50b5e5776db92d46e59446}} 
+\index{proj.c@{proj.c}!imgGameName@{imgGameName}}
+\index{imgGameName@{imgGameName}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgGameName}{imgGameName}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Game\+Name\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a2919da1c207f8492c2e7da5a709bbb0b}\label{proj_8c_a2919da1c207f8492c2e7da5a709bbb0b}} 
+\index{proj.c@{proj.c}!imgGameOver@{imgGameOver}}
+\index{imgGameOver@{imgGameOver}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgGameOver}{imgGameOver}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Game\+Over\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a1f0aaa361bca8ed90f47e2360b47ac40}\label{proj_8c_a1f0aaa361bca8ed90f47e2360b47ac40}} 
+\index{proj.c@{proj.c}!imgHeart@{imgHeart}}
+\index{imgHeart@{imgHeart}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgHeart}{imgHeart}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Heart\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a4797c5447e118fd03adcac4e0a865be3}\label{proj_8c_a4797c5447e118fd03adcac4e0a865be3}} 
+\index{proj.c@{proj.c}!imgInstructions@{imgInstructions}}
+\index{imgInstructions@{imgInstructions}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgInstructions}{imgInstructions}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Instructions\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a855d3f8fa972119b46346745cce4f3a2}\label{proj_8c_a855d3f8fa972119b46346745cce4f3a2}} 
+\index{proj.c@{proj.c}!imgMoon@{imgMoon}}
+\index{imgMoon@{imgMoon}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgMoon}{imgMoon}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Moon\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a6083c1022483539d13875e39d5789131}\label{proj_8c_a6083c1022483539d13875e39d5789131}} 
+\index{proj.c@{proj.c}!imgMouse@{imgMouse}}
+\index{imgMouse@{imgMouse}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgMouse}{imgMouse}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Mouse\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a46e53e437f6d11015549716990183fc7}\label{proj_8c_a46e53e437f6d11015549716990183fc7}} 
+\index{proj.c@{proj.c}!imgSun@{imgSun}}
+\index{imgSun@{imgSun}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgSun}{imgSun}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Sun\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a9886ed0a4c2ecfec2498d74f619ed47c}\label{proj_8c_a9886ed0a4c2ecfec2498d74f619ed47c}} 
+\index{proj.c@{proj.c}!imgVictory@{imgVictory}}
+\index{imgVictory@{imgVictory}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{imgVictory}{imgVictory}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t img\+Victory\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a9faa927d445247047db89f8dfd0960a0}\label{proj_8c_a9faa927d445247047db89f8dfd0960a0}} 
+\index{proj.c@{proj.c}!initialAllCardsFlip@{initialAllCardsFlip}}
+\index{initialAllCardsFlip@{initialAllCardsFlip}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{initialAllCardsFlip}{initialAllCardsFlip}}
+{\footnotesize\ttfamily bool initial\+All\+Cards\+Flip = true}
+
+\mbox{\Hypertarget{proj_8c_a957d5e21986c46f2a978e2fffa449232}\label{proj_8c_a957d5e21986c46f2a978e2fffa449232}} 
+\index{proj.c@{proj.c}!isAnyCardFlipping@{isAnyCardFlipping}}
+\index{isAnyCardFlipping@{isAnyCardFlipping}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{isAnyCardFlipping}{isAnyCardFlipping}}
+{\footnotesize\ttfamily bool is\+Any\+Card\+Flipping = false}
+
+\mbox{\Hypertarget{proj_8c_a37ef625961cf24626a8a3d178beca61c}\label{proj_8c_a37ef625961cf24626a8a3d178beca61c}} 
+\index{proj.c@{proj.c}!maxNumOfCardsFlipped@{maxNumOfCardsFlipped}}
+\index{maxNumOfCardsFlipped@{maxNumOfCardsFlipped}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{maxNumOfCardsFlipped}{maxNumOfCardsFlipped}}
+{\footnotesize\ttfamily int max\+Num\+Of\+Cards\+Flipped = 2}
+
+\mbox{\Hypertarget{proj_8c_a85da43887f7c5fec49b8e7eaf682b65e}\label{proj_8c_a85da43887f7c5fec49b8e7eaf682b65e}} 
+\index{proj.c@{proj.c}!modeinfo@{modeinfo}}
+\index{modeinfo@{modeinfo}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{modeinfo}{modeinfo}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t modeinfo\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a07faa847230d0abd8c3db00e3f8cae7a}\label{proj_8c_a07faa847230d0abd8c3db00e3f8cae7a}} 
+\index{proj.c@{proj.c}!mouse@{mouse}}
+\index{mouse@{mouse}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_mouse}{Mouse}} mouse\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a84ca794211044aa1810646b2e9b6177e}\label{proj_8c_a84ca794211044aa1810646b2e9b6177e}} 
+\index{proj.c@{proj.c}!p1@{p1}}
+\index{p1@{p1}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{p1}{p1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}{Player}} p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a82a4138e5c32cf373ad5e70a2af5e036}\label{proj_8c_a82a4138e5c32cf373ad5e70a2af5e036}} 
+\index{proj.c@{proj.c}!packet1@{packet1}}
+\index{packet1@{packet1}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{packet1}{packet1}}
+{\footnotesize\ttfamily struct packet packet1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_aab8af81e4a0fa7a938e96e7c2c13a64e}\label{proj_8c_aab8af81e4a0fa7a938e96e7c2c13a64e}} 
+\index{proj.c@{proj.c}!read\_packet@{read\_packet}}
+\index{read\_packet@{read\_packet}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{read\_packet}{read\_packet}}
+{\footnotesize\ttfamily uint8\+\_\+t read\+\_\+packet\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a502c4aa5d1ba510994288df50ec1cc17}\label{proj_8c_a502c4aa5d1ba510994288df50ec1cc17}} 
+\index{proj.c@{proj.c}!reading\_error@{reading\_error}}
+\index{reading\_error@{reading\_error}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{reading\_error}{reading\_error}}
+{\footnotesize\ttfamily bool reading\+\_\+error\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_aa1de7a5557e9d96b83cf03f73c92163f}\label{proj_8c_aa1de7a5557e9d96b83cf03f73c92163f}} 
+\index{proj.c@{proj.c}!scancode@{scancode}}
+\index{scancode@{scancode}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily uint8\+\_\+t scancode\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_ae80d785421df9d3124cb4bbb4a81efda}\label{proj_8c_ae80d785421df9d3124cb4bbb4a81efda}} 
+\index{proj.c@{proj.c}!spriteBackground@{spriteBackground}}
+\index{spriteBackground@{spriteBackground}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteBackground}{spriteBackground}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Background\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_abe388bd8424e01b16ac277426314bae9}\label{proj_8c_abe388bd8424e01b16ac277426314bae9}} 
+\index{proj.c@{proj.c}!spriteCardBack@{spriteCardBack}}
+\index{spriteCardBack@{spriteCardBack}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteCardBack}{spriteCardBack}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Card\+Back\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_afbf0a1be3cd5321ea1a4edddcc71314f}\label{proj_8c_afbf0a1be3cd5321ea1a4edddcc71314f}} 
+\index{proj.c@{proj.c}!spriteDeck@{spriteDeck}}
+\index{spriteDeck@{spriteDeck}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteDeck}{spriteDeck}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Deck\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a668c67032019a5b8de8a6e3480c481e0}\label{proj_8c_a668c67032019a5b8de8a6e3480c481e0}} 
+\index{proj.c@{proj.c}!spriteGameName@{spriteGameName}}
+\index{spriteGameName@{spriteGameName}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteGameName}{spriteGameName}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Game\+Name\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_aee5692f14b392b20c255150d3f64e8d8}\label{proj_8c_aee5692f14b392b20c255150d3f64e8d8}} 
+\index{proj.c@{proj.c}!spriteGameOver@{spriteGameOver}}
+\index{spriteGameOver@{spriteGameOver}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteGameOver}{spriteGameOver}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Game\+Over\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a1962d394c203be8aa2066524a4b2df9a}\label{proj_8c_a1962d394c203be8aa2066524a4b2df9a}} 
+\index{proj.c@{proj.c}!spriteHeart@{spriteHeart}}
+\index{spriteHeart@{spriteHeart}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteHeart}{spriteHeart}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Heart\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_acc346c6c2f4960e46c89547f805b1d01}\label{proj_8c_acc346c6c2f4960e46c89547f805b1d01}} 
+\index{proj.c@{proj.c}!spriteInstructions@{spriteInstructions}}
+\index{spriteInstructions@{spriteInstructions}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteInstructions}{spriteInstructions}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Instructions\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a8951b4a683ec578ad8bea9e8fb2fc12f}\label{proj_8c_a8951b4a683ec578ad8bea9e8fb2fc12f}} 
+\index{proj.c@{proj.c}!spriteMoon@{spriteMoon}}
+\index{spriteMoon@{spriteMoon}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteMoon}{spriteMoon}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Moon\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_ab9c84cc3840f1663d8b2a0d5e525f60f}\label{proj_8c_ab9c84cc3840f1663d8b2a0d5e525f60f}} 
+\index{proj.c@{proj.c}!spriteMouse@{spriteMouse}}
+\index{spriteMouse@{spriteMouse}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteMouse}{spriteMouse}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Mouse\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a009b2ee21bcc76d2fd57f3805b6e3456}\label{proj_8c_a009b2ee21bcc76d2fd57f3805b6e3456}} 
+\index{proj.c@{proj.c}!spriteSun@{spriteSun}}
+\index{spriteSun@{spriteSun}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteSun}{spriteSun}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Sun\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_a348dee04beeec0ecdd6fcdf29ec44b65}\label{proj_8c_a348dee04beeec0ecdd6fcdf29ec44b65}} 
+\index{proj.c@{proj.c}!spriteVictory@{spriteVictory}}
+\index{spriteVictory@{spriteVictory}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{spriteVictory}{spriteVictory}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ sprite\+Victory\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{proj_8c_ab36b69a4a814040b896cf1d755163fe2}\label{proj_8c_ab36b69a4a814040b896cf1d755163fe2}} 
+\index{proj.c@{proj.c}!tmr\_tck\_counter@{tmr\_tck\_counter}}
+\index{tmr\_tck\_counter@{tmr\_tck\_counter}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{tmr\_tck\_counter}{tmr\_tck\_counter}}
+{\footnotesize\ttfamily int tmr\+\_\+tck\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+

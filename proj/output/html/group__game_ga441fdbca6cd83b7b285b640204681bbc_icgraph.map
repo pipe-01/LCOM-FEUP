@@ -1,0 +1,6 @@
+<map id="draw_letter" name="draw_letter">
+<area shape="rect" id="node1" title="Draws the letter &#39;letter&#39; in the position (screenX, screenY)" alt="" coords="301,31,387,57"/>
+<area shape="rect" id="node2" href="$group__game.html#ga8b6c981db3aad686de04545c1e87f33c" title="Draws the menu, Play button, Instructions Button and Exit button." alt="" coords="164,5,252,32"/>
+<area shape="rect" id="node4" href="$group__game.html#ga91fbb4c4f500ee2b1f21b05a6674b1d3" title="Draws the pause menu, Resume button, Instructions Button and Exit button." alt="" coords="163,56,253,83"/>
+<area shape="rect" id="node3" href="$proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b" title=" " alt="" coords="5,31,115,57"/>
+</map>

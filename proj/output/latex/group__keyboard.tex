@@ -1,0 +1,141 @@
+\hypertarget{group__keyboard}{}\doxysection{keyboard}
+\label{group__keyboard}\index{keyboard@{keyboard}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__keyboard_ga86759203ec8ed160a094b1f17b0ad084}{kbc\+\_\+subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes the keyboard. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__keyboard_gad76a10e1c3df32c355a1b0ab8c015e3d}{kbc\+\_\+unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes the keyboard. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__keyboard_gae98d2188f25f699678d9aa9372441844}{print\+SC}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__keyboard_gaa46f02b061a98185b8df6e4cc1a1c23c}{write\+Command}} (uint8\+\_\+t cmd, uint8\+\_\+t port)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__keyboard_gabbe0c9700f4970531bcaba93aeed666c}{read\+Data}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{group__keyboard_ga240affc37531919dd1bdf3d8c27a64d4}{kbc\+Enable\+Interrutpt}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using keyboard 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__keyboard_ga86759203ec8ed160a094b1f17b0ad084}\label{group__keyboard_ga86759203ec8ed160a094b1f17b0ad084}} 
+\index{keyboard@{keyboard}!kbc\_subscribe@{kbc\_subscribe}}
+\index{kbc\_subscribe@{kbc\_subscribe}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_subscribe()}{kbc\_subscribe()}}
+{\footnotesize\ttfamily int kbc\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes the keyboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{group__keyboard_ga86759203ec8ed160a094b1f17b0ad084_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gad76a10e1c3df32c355a1b0ab8c015e3d}\label{group__keyboard_gad76a10e1c3df32c355a1b0ab8c015e3d}} 
+\index{keyboard@{keyboard}!kbc\_unsubscribe@{kbc\_unsubscribe}}
+\index{kbc\_unsubscribe@{kbc\_unsubscribe}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbc\_unsubscribe()}{kbc\_unsubscribe()}}
+{\footnotesize\ttfamily int kbc\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes the keyboard. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{group__keyboard_gad76a10e1c3df32c355a1b0ab8c015e3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_ga240affc37531919dd1bdf3d8c27a64d4}\label{group__keyboard_ga240affc37531919dd1bdf3d8c27a64d4}} 
+\index{keyboard@{keyboard}!kbcEnableInterrutpt@{kbcEnableInterrutpt}}
+\index{kbcEnableInterrutpt@{kbcEnableInterrutpt}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{kbcEnableInterrutpt()}{kbcEnableInterrutpt()}}
+{\footnotesize\ttfamily uint8\+\_\+t kbc\+Enable\+Interrutpt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__keyboard_ga240affc37531919dd1bdf3d8c27a64d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gae98d2188f25f699678d9aa9372441844}\label{group__keyboard_gae98d2188f25f699678d9aa9372441844}} 
+\index{keyboard@{keyboard}!printSC@{printSC}}
+\index{printSC@{printSC}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{printSC()}{printSC()}}
+{\footnotesize\ttfamily bool print\+SC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__keyboard_gabbe0c9700f4970531bcaba93aeed666c}\label{group__keyboard_gabbe0c9700f4970531bcaba93aeed666c}} 
+\index{keyboard@{keyboard}!readData@{readData}}
+\index{readData@{readData}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{readData()}{readData()}}
+{\footnotesize\ttfamily uint8\+\_\+t read\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{group__keyboard_gabbe0c9700f4970531bcaba93aeed666c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{group__keyboard_gabbe0c9700f4970531bcaba93aeed666c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__keyboard_gaa46f02b061a98185b8df6e4cc1a1c23c}\label{group__keyboard_gaa46f02b061a98185b8df6e4cc1a1c23c}} 
+\index{keyboard@{keyboard}!writeCommand@{writeCommand}}
+\index{writeCommand@{writeCommand}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{writeCommand()}{writeCommand()}}
+{\footnotesize\ttfamily uint8\+\_\+t write\+Command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd,  }\item[{uint8\+\_\+t}]{port }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & \\
+\hline
+{\em port} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{group__keyboard_gaa46f02b061a98185b8df6e4cc1a1c23c_cgraph}
+\end{center}
+\end{figure}

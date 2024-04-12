@@ -1,0 +1,240 @@
+\hypertarget{group__video}{}\doxysection{video}
+\label{group__video}\index{video@{video}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__video_gac67621adf87bcebb04fab536c7245315}{vg\+\_\+start}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Starts the video\+\_\+card in mode \textquotesingle{}mode\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_ga28e24d4a4f8c58583aeb9c91b991d8eb}{my\+\_\+update\+Video\+Mem}} ()
+\begin{DoxyCompactList}\small\item\em Copies the buffer (color of each pixel) into the memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_ga53ab0bc994ad20993bc7fd43b9b66db2}{my\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}}, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_gaf61659f103bf1d72b97b5cc69a3f0d3c}{my\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}}, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_ga22cd19f7ba8863c00392613422fb7be7}{green\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Makes every pixel of the screen green. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__video_ga280e76a809cc7f8a67508b9cd7a68a44}{green\+Part\+Of\+Screen}} (int \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, int \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}}, int width, int height)
+\begin{DoxyCompactList}\small\item\em Makes part of the screen green. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__video_gac139142181a96961cc91e2fdb8738d17}{vg\+\_\+draw\+\_\+card}} (int screenX, int screenY, int positionX, int positionY)
+\item 
+void \mbox{\hyperlink{group__video_gafa847549e9dc6e4f49f651623bc456dc}{clear\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em free the memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for using video card 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__video_gafa847549e9dc6e4f49f651623bc456dc}\label{group__video_gafa847549e9dc6e4f49f651623bc456dc}} 
+\index{video@{video}!clear\_buffer@{clear\_buffer}}
+\index{clear\_buffer@{clear\_buffer}!video@{video}}
+\doxysubsubsection{\texorpdfstring{clear\_buffer()}{clear\_buffer()}}
+{\footnotesize\ttfamily void clear\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+free the memory 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{group__video_gafa847549e9dc6e4f49f651623bc456dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_ga280e76a809cc7f8a67508b9cd7a68a44}\label{group__video_ga280e76a809cc7f8a67508b9cd7a68a44}} 
+\index{video@{video}!greenPartOfScreen@{greenPartOfScreen}}
+\index{greenPartOfScreen@{greenPartOfScreen}!video@{video}}
+\doxysubsubsection{\texorpdfstring{greenPartOfScreen()}{greenPartOfScreen()}}
+{\footnotesize\ttfamily void green\+Part\+Of\+Screen (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Makes part of the screen green. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X start position (top left) \\
+\hline
+{\em y} & Y start position \char`\"{}\char`\"{} \char`\"{}\char`\"{} \\
+\hline
+{\em width} & width of the \char`\"{}rectangle\char`\"{} \\
+\hline
+{\em height} & height of the \char`\"{}rectangle\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{group__video_ga280e76a809cc7f8a67508b9cd7a68a44_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__video_ga280e76a809cc7f8a67508b9cd7a68a44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_ga22cd19f7ba8863c00392613422fb7be7}\label{group__video_ga22cd19f7ba8863c00392613422fb7be7}} 
+\index{video@{video}!greenScreen@{greenScreen}}
+\index{greenScreen@{greenScreen}!video@{video}}
+\doxysubsubsection{\texorpdfstring{greenScreen()}{greenScreen()}}
+{\footnotesize\ttfamily int green\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Makes every pixel of the screen green. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{group__video_ga22cd19f7ba8863c00392613422fb7be7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{group__video_ga22cd19f7ba8863c00392613422fb7be7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_gaf61659f103bf1d72b97b5cc69a3f0d3c}\label{group__video_gaf61659f103bf1d72b97b5cc69a3f0d3c}} 
+\index{video@{video}!my\_draw\_pixel@{my\_draw\_pixel}}
+\index{my\_draw\_pixel@{my\_draw\_pixel}!video@{video}}
+\doxysubsubsection{\texorpdfstring{my\_draw\_pixel()}{my\_draw\_pixel()}}
+{\footnotesize\ttfamily int my\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x\+\_\+position \\
+\hline
+{\em y} & y\+\_\+position \\
+\hline
+{\em color} & color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__video_gaf61659f103bf1d72b97b5cc69a3f0d3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_ga53ab0bc994ad20993bc7fd43b9b66db2}\label{group__video_ga53ab0bc994ad20993bc7fd43b9b66db2}} 
+\index{video@{video}!my\_draw\_rectangle@{my\_draw\_rectangle}}
+\index{my\_draw\_rectangle@{my\_draw\_rectangle}!video@{video}}
+\doxysubsubsection{\texorpdfstring{my\_draw\_rectangle()}{my\_draw\_rectangle()}}
+{\footnotesize\ttfamily int my\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x\+\_\+position \\
+\hline
+{\em y} & y\+\_\+position \\
+\hline
+{\em width} & width \\
+\hline
+{\em height} & height \\
+\hline
+{\em color} & color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__video_ga28e24d4a4f8c58583aeb9c91b991d8eb}\label{group__video_ga28e24d4a4f8c58583aeb9c91b991d8eb}} 
+\index{video@{video}!my\_updateVideoMem@{my\_updateVideoMem}}
+\index{my\_updateVideoMem@{my\_updateVideoMem}!video@{video}}
+\doxysubsubsection{\texorpdfstring{my\_updateVideoMem()}{my\_updateVideoMem()}}
+{\footnotesize\ttfamily int my\+\_\+update\+Video\+Mem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Copies the buffer (color of each pixel) into the memory. 
+
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{group__video_ga28e24d4a4f8c58583aeb9c91b991d8eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_gac139142181a96961cc91e2fdb8738d17}\label{group__video_gac139142181a96961cc91e2fdb8738d17}} 
+\index{video@{video}!vg\_draw\_card@{vg\_draw\_card}}
+\index{vg\_draw\_card@{vg\_draw\_card}!video@{video}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_card()}{vg\_draw\_card()}}
+{\footnotesize\ttfamily void vg\+\_\+draw\+\_\+card (\begin{DoxyParamCaption}\item[{int}]{screenX,  }\item[{int}]{screenY,  }\item[{int}]{positionX,  }\item[{int}]{positionY }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em screenX} & \\
+\hline
+{\em screenY} & \\
+\hline
+{\em positionX} & \\
+\hline
+{\em positionY} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{group__video_gac139142181a96961cc91e2fdb8738d17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__video_gac139142181a96961cc91e2fdb8738d17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__video_gac67621adf87bcebb04fab536c7245315}\label{group__video_gac67621adf87bcebb04fab536c7245315}} 
+\index{video@{video}!vg\_start@{vg\_start}}
+\index{vg\_start@{vg\_start}!video@{video}}
+\doxysubsubsection{\texorpdfstring{vg\_start()}{vg\_start()}}
+{\footnotesize\ttfamily int vg\+\_\+start (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Starts the video\+\_\+card in mode \textquotesingle{}mode\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{group__video_gac67621adf87bcebb04fab536c7245315_icgraph}
+\end{center}
+\end{figure}

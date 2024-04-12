@@ -1,0 +1,4 @@
+<map id="flipCardOnClick" name="flipCardOnClick">
+<area shape="rect" id="node1" title="Flips a card when the user clicks on it." alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$group__game.html#gabd7266acf9159cb22ea03bec1f95b720" title="Get the Cards Screen X Y object." alt="" coords="164,5,295,32"/>
+</map>

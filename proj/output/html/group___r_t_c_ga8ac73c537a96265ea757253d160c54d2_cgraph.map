@@ -1,0 +1,5 @@
+<map id="get_date" name="get_date">
+<area shape="rect" id="node1" title="fills the struct Date with the actual date" alt="" coords="5,31,77,57"/>
+<area shape="rect" id="node2" href="$group___r_t_c.html#ga8430542e163702ddb835ed37c7bda60b" title="convert bcd number to decimal" alt="" coords="125,5,263,32"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="149,56,239,83"/>
+</map>

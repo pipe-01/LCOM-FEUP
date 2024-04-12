@@ -1,0 +1,613 @@
+\hypertarget{group__game}{}\doxysection{game}
+\label{group__game}\index{game@{game}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__game_gadbcbc0c32d27663f192796d80b2669a4}{create\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Create a mouse object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga8b6c981db3aad686de04545c1e87f33c}{draw\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Draws the menu, Play button, Instructions Button and Exit button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga91fbb4c4f500ee2b1f21b05a6674b1d3}{draw\+\_\+pause}} ()
+\begin{DoxyCompactList}\small\item\em Draws the pause menu, Resume button, Instructions Button and Exit button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga42f4903ab89aff9e3ee0206c52cf710a}{draw\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Draws the mouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga2c9f74a0609e6d9e770ebea59a4d12a1}{update\+\_\+mouse\+\_\+position}} (int \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, int \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}})
+\begin{DoxyCompactList}\small\item\em updates mouse x position and y position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga2f98390fa85c2682a7aceaeced936f82}{initialize\+\_\+game\+\_\+cards}} (\mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}} $\ast$\mbox{\hyperlink{proj_8c_a67eb121323aaae7379613db3c4310a6a}{card\+Array}})
+\begin{DoxyCompactList}\small\item\em Generates the board, the 16 cards of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga9d089493fcdc7c31cbf75b27d4b10264}{initialize\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the Player stats. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gae24016b882b40300bbfb484d88b32398}{draw\+\_\+game\+\_\+cards}} ()
+\begin{DoxyCompactList}\small\item\em Draws the board, the background and the cards. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gae1d711cffeb366be41887b57c2e8f8f2}{draw\+Hearts}} ()
+\begin{DoxyCompactList}\small\item\em Draws the players\textquotesingle{} lives. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga2ef25ec96c9e1523f3f6ac1edd081063}{draw\+Moon}} ()
+\begin{DoxyCompactList}\small\item\em Draws the MOOOON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga7d1ae903b8861ce290de1aefa9dc3545}{draw\+Sun}} ()
+\begin{DoxyCompactList}\small\item\em Draws the Sun. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gacbd5457c126570af763ea24dc41da830}{draw\+Background}} ()
+\begin{DoxyCompactList}\small\item\em Draws the Backgorund. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga9496e4380bbed6f786f33fa7edfeb0cf}{draw\+\_\+victory}} ()
+\begin{DoxyCompactList}\small\item\em Draws the victory img. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gaa37e76033505d7f48a87284bd85c48a2}{draw\+\_\+game\+\_\+over}} ()
+\begin{DoxyCompactList}\small\item\em Draws the game over img. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga0cf97fdd7eb71c16521fedab862db6a3}{draw\+Instructions}} ()
+\begin{DoxyCompactList}\small\item\em Draws the instructions of the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__game_ga09843b75080525ab8f5572265ac73d67}{flip\+ACard\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Flips a card that is facing up, to facing down. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__game_gafb7aed5673dc69ab9499029e10b844a3}{flip\+ACard\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Flips a card that is facing down, to facing up. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__game_ga66a16995651efeecccf372a75e5180aa}{flip\+All\+Cards\+Down}} ()
+\item 
+int \mbox{\hyperlink{group__game_gabd7266acf9159cb22ea03bec1f95b720}{get\+Cards\+Screen\+XY}} (int $\ast$\mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, int $\ast$\mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}})
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{struct_cards}{Cards}} Screen X Y object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga26035ccc4fc0e502497a6804294f1817}{flip\+Card\+On\+Click}} ()
+\begin{DoxyCompactList}\small\item\em Flips a card when the user clicks on it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga441fdbca6cd83b7b285b640204681bbc}{draw\+\_\+letter}} (int screenX, int screenY, xpm\+\_\+map\+\_\+t letter)
+\begin{DoxyCompactList}\small\item\em Draws the letter \textquotesingle{}letter\textquotesingle{} in the position (screenX, screenY) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}{card\+Number}} \mbox{\hyperlink{group__game_gab8f529375670ada86e8e1e6594e24a67}{get\+Card\+Number}} (int \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}})
+\begin{DoxyCompactList}\small\item\em Get the Card Number object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79}{card\+Suit}} \mbox{\hyperlink{group__game_ga95bd042452e6e4fd9ccf918834b0a966}{get\+Card\+Suit}} (int \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}})
+\begin{DoxyCompactList}\small\item\em Get the Card Suit object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for drawing game elements and update game state 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__game_gadbcbc0c32d27663f192796d80b2669a4}\label{group__game_gadbcbc0c32d27663f192796d80b2669a4}} 
+\index{game@{game}!create\_mouse@{create\_mouse}}
+\index{create\_mouse@{create\_mouse}!game@{game}}
+\doxysubsubsection{\texorpdfstring{create\_mouse()}{create\_mouse()}}
+{\footnotesize\ttfamily void create\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a mouse object. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{group__game_gadbcbc0c32d27663f192796d80b2669a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gae24016b882b40300bbfb484d88b32398}\label{group__game_gae24016b882b40300bbfb484d88b32398}} 
+\index{game@{game}!draw\_game\_cards@{draw\_game\_cards}}
+\index{draw\_game\_cards@{draw\_game\_cards}!game@{game}}
+\doxysubsubsection{\texorpdfstring{draw\_game\_cards()}{draw\_game\_cards()}}
+{\footnotesize\ttfamily void draw\+\_\+game\+\_\+cards (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the board, the background and the cards. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_gae24016b882b40300bbfb484d88b32398_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{group__game_gae24016b882b40300bbfb484d88b32398_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gaa37e76033505d7f48a87284bd85c48a2}\label{group__game_gaa37e76033505d7f48a87284bd85c48a2}} 
+\index{game@{game}!draw\_game\_over@{draw\_game\_over}}
+\index{draw\_game\_over@{draw\_game\_over}!game@{game}}
+\doxysubsubsection{\texorpdfstring{draw\_game\_over()}{draw\_game\_over()}}
+{\footnotesize\ttfamily void draw\+\_\+game\+\_\+over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the game over img. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{group__game_gaa37e76033505d7f48a87284bd85c48a2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{group__game_gaa37e76033505d7f48a87284bd85c48a2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga441fdbca6cd83b7b285b640204681bbc}\label{group__game_ga441fdbca6cd83b7b285b640204681bbc}} 
+\index{game@{game}!draw\_letter@{draw\_letter}}
+\index{draw\_letter@{draw\_letter}!game@{game}}
+\doxysubsubsection{\texorpdfstring{draw\_letter()}{draw\_letter()}}
+{\footnotesize\ttfamily void draw\+\_\+letter (\begin{DoxyParamCaption}\item[{int}]{screenX,  }\item[{int}]{screenY,  }\item[{xpm\+\_\+map\+\_\+t}]{letter }\end{DoxyParamCaption})}
+
+
+
+Draws the letter \textquotesingle{}letter\textquotesingle{} in the position (screenX, screenY) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screenX} & x\+\_\+position \\
+\hline
+{\em screenY} & y\+\_\+position \\
+\hline
+{\em letter} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{group__game_ga441fdbca6cd83b7b285b640204681bbc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga441fdbca6cd83b7b285b640204681bbc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga8b6c981db3aad686de04545c1e87f33c}\label{group__game_ga8b6c981db3aad686de04545c1e87f33c}} 
+\index{game@{game}!draw\_menu@{draw\_menu}}
+\index{draw\_menu@{draw\_menu}!game@{game}}
+\doxysubsubsection{\texorpdfstring{draw\_menu()}{draw\_menu()}}
+{\footnotesize\ttfamily void draw\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the menu, Play button, Instructions Button and Exit button. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga8b6c981db3aad686de04545c1e87f33c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{group__game_ga8b6c981db3aad686de04545c1e87f33c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga42f4903ab89aff9e3ee0206c52cf710a}\label{group__game_ga42f4903ab89aff9e3ee0206c52cf710a}} 
+\index{game@{game}!draw\_mouse@{draw\_mouse}}
+\index{draw\_mouse@{draw\_mouse}!game@{game}}
+\doxysubsubsection{\texorpdfstring{draw\_mouse()}{draw\_mouse()}}
+{\footnotesize\ttfamily void draw\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the mouse. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{group__game_ga42f4903ab89aff9e3ee0206c52cf710a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{group__game_ga42f4903ab89aff9e3ee0206c52cf710a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga91fbb4c4f500ee2b1f21b05a6674b1d3}\label{group__game_ga91fbb4c4f500ee2b1f21b05a6674b1d3}} 
+\index{game@{game}!draw\_pause@{draw\_pause}}
+\index{draw\_pause@{draw\_pause}!game@{game}}
+\doxysubsubsection{\texorpdfstring{draw\_pause()}{draw\_pause()}}
+{\footnotesize\ttfamily void draw\+\_\+pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the pause menu, Resume button, Instructions Button and Exit button. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga91fbb4c4f500ee2b1f21b05a6674b1d3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{group__game_ga91fbb4c4f500ee2b1f21b05a6674b1d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga9496e4380bbed6f786f33fa7edfeb0cf}\label{group__game_ga9496e4380bbed6f786f33fa7edfeb0cf}} 
+\index{game@{game}!draw\_victory@{draw\_victory}}
+\index{draw\_victory@{draw\_victory}!game@{game}}
+\doxysubsubsection{\texorpdfstring{draw\_victory()}{draw\_victory()}}
+{\footnotesize\ttfamily void draw\+\_\+victory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the victory img. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{group__game_ga9496e4380bbed6f786f33fa7edfeb0cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{group__game_ga9496e4380bbed6f786f33fa7edfeb0cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gacbd5457c126570af763ea24dc41da830}\label{group__game_gacbd5457c126570af763ea24dc41da830}} 
+\index{game@{game}!drawBackground@{drawBackground}}
+\index{drawBackground@{drawBackground}!game@{game}}
+\doxysubsubsection{\texorpdfstring{drawBackground()}{drawBackground()}}
+{\footnotesize\ttfamily void draw\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the Backgorund. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{group__game_gacbd5457c126570af763ea24dc41da830_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_gacbd5457c126570af763ea24dc41da830_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gae1d711cffeb366be41887b57c2e8f8f2}\label{group__game_gae1d711cffeb366be41887b57c2e8f8f2}} 
+\index{game@{game}!drawHearts@{drawHearts}}
+\index{drawHearts@{drawHearts}!game@{game}}
+\doxysubsubsection{\texorpdfstring{drawHearts()}{drawHearts()}}
+{\footnotesize\ttfamily void draw\+Hearts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the players\textquotesingle{} lives. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{group__game_gae1d711cffeb366be41887b57c2e8f8f2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{group__game_gae1d711cffeb366be41887b57c2e8f8f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga0cf97fdd7eb71c16521fedab862db6a3}\label{group__game_ga0cf97fdd7eb71c16521fedab862db6a3}} 
+\index{game@{game}!drawInstructions@{drawInstructions}}
+\index{drawInstructions@{drawInstructions}!game@{game}}
+\doxysubsubsection{\texorpdfstring{drawInstructions()}{drawInstructions()}}
+{\footnotesize\ttfamily void draw\+Instructions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the instructions of the game. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{group__game_ga0cf97fdd7eb71c16521fedab862db6a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{group__game_ga0cf97fdd7eb71c16521fedab862db6a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga2ef25ec96c9e1523f3f6ac1edd081063}\label{group__game_ga2ef25ec96c9e1523f3f6ac1edd081063}} 
+\index{game@{game}!drawMoon@{drawMoon}}
+\index{drawMoon@{drawMoon}!game@{game}}
+\doxysubsubsection{\texorpdfstring{drawMoon()}{drawMoon()}}
+{\footnotesize\ttfamily void draw\+Moon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the MOOOON. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{group__game_ga2ef25ec96c9e1523f3f6ac1edd081063_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{group__game_ga2ef25ec96c9e1523f3f6ac1edd081063_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga7d1ae903b8861ce290de1aefa9dc3545}\label{group__game_ga7d1ae903b8861ce290de1aefa9dc3545}} 
+\index{game@{game}!drawSun@{drawSun}}
+\index{drawSun@{drawSun}!game@{game}}
+\doxysubsubsection{\texorpdfstring{drawSun()}{drawSun()}}
+{\footnotesize\ttfamily void draw\+Sun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the Sun. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{group__game_ga7d1ae903b8861ce290de1aefa9dc3545_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{group__game_ga7d1ae903b8861ce290de1aefa9dc3545_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga09843b75080525ab8f5572265ac73d67}\label{group__game_ga09843b75080525ab8f5572265ac73d67}} 
+\index{game@{game}!flipACardDown@{flipACardDown}}
+\index{flipACardDown@{flipACardDown}!game@{game}}
+\doxysubsubsection{\texorpdfstring{flipACardDown()}{flipACardDown()}}
+{\footnotesize\ttfamily bool flip\+ACard\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flips a card that is facing up, to facing down. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga09843b75080525ab8f5572265ac73d67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga09843b75080525ab8f5572265ac73d67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gafb7aed5673dc69ab9499029e10b844a3}\label{group__game_gafb7aed5673dc69ab9499029e10b844a3}} 
+\index{game@{game}!flipACardUp@{flipACardUp}}
+\index{flipACardUp@{flipACardUp}!game@{game}}
+\doxysubsubsection{\texorpdfstring{flipACardUp()}{flipACardUp()}}
+{\footnotesize\ttfamily bool flip\+ACard\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flips a card that is facing down, to facing up. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_gafb7aed5673dc69ab9499029e10b844a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_gafb7aed5673dc69ab9499029e10b844a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga66a16995651efeecccf372a75e5180aa}\label{group__game_ga66a16995651efeecccf372a75e5180aa}} 
+\index{game@{game}!flipAllCardsDown@{flipAllCardsDown}}
+\index{flipAllCardsDown@{flipAllCardsDown}!game@{game}}
+\doxysubsubsection{\texorpdfstring{flipAllCardsDown()}{flipAllCardsDown()}}
+{\footnotesize\ttfamily bool flip\+All\+Cards\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga66a16995651efeecccf372a75e5180aa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga26035ccc4fc0e502497a6804294f1817}\label{group__game_ga26035ccc4fc0e502497a6804294f1817}} 
+\index{game@{game}!flipCardOnClick@{flipCardOnClick}}
+\index{flipCardOnClick@{flipCardOnClick}!game@{game}}
+\doxysubsubsection{\texorpdfstring{flipCardOnClick()}{flipCardOnClick()}}
+{\footnotesize\ttfamily void flip\+Card\+On\+Click (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flips a card when the user clicks on it. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{group__game_ga26035ccc4fc0e502497a6804294f1817_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{group__game_ga26035ccc4fc0e502497a6804294f1817_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gab8f529375670ada86e8e1e6594e24a67}\label{group__game_gab8f529375670ada86e8e1e6594e24a67}} 
+\index{game@{game}!getCardNumber@{getCardNumber}}
+\index{getCardNumber@{getCardNumber}!game@{game}}
+\doxysubsubsection{\texorpdfstring{getCardNumber()}{getCardNumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}{card\+Number}} get\+Card\+Number (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Get the Card Number object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+card\+Number 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_gab8f529375670ada86e8e1e6594e24a67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gabd7266acf9159cb22ea03bec1f95b720}\label{group__game_gabd7266acf9159cb22ea03bec1f95b720}} 
+\index{game@{game}!getCardsScreenXY@{getCardsScreenXY}}
+\index{getCardsScreenXY@{getCardsScreenXY}!game@{game}}
+\doxysubsubsection{\texorpdfstring{getCardsScreenXY()}{getCardsScreenXY()}}
+{\footnotesize\ttfamily int get\+Cards\+Screen\+XY (\begin{DoxyParamCaption}\item[{int $\ast$}]{x,  }\item[{int $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{struct_cards}{Cards}} Screen X Y object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x\+\_\+position \\
+\hline
+{\em y} & y\+\_\+position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_gabd7266acf9159cb22ea03bec1f95b720_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga95bd042452e6e4fd9ccf918834b0a966}\label{group__game_ga95bd042452e6e4fd9ccf918834b0a966}} 
+\index{game@{game}!getCardSuit@{getCardSuit}}
+\index{getCardSuit@{getCardSuit}!game@{game}}
+\doxysubsubsection{\texorpdfstring{getCardSuit()}{getCardSuit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79}{card\+Suit}} get\+Card\+Suit (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Get the Card Suit object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+card\+Suit 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga95bd042452e6e4fd9ccf918834b0a966_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga2f98390fa85c2682a7aceaeced936f82}\label{group__game_ga2f98390fa85c2682a7aceaeced936f82}} 
+\index{game@{game}!initialize\_game\_cards@{initialize\_game\_cards}}
+\index{initialize\_game\_cards@{initialize\_game\_cards}!game@{game}}
+\doxysubsubsection{\texorpdfstring{initialize\_game\_cards()}{initialize\_game\_cards()}}
+{\footnotesize\ttfamily void initialize\+\_\+game\+\_\+cards (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}} $\ast$}]{card\+Array }\end{DoxyParamCaption})}
+
+
+
+Generates the board, the 16 cards of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card\+Array} & array of cards that is updated in this function \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{group__game_ga2f98390fa85c2682a7aceaeced936f82_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{group__game_ga2f98390fa85c2682a7aceaeced936f82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga9d089493fcdc7c31cbf75b27d4b10264}\label{group__game_ga9d089493fcdc7c31cbf75b27d4b10264}} 
+\index{game@{game}!initializePlayer@{initializePlayer}}
+\index{initializePlayer@{initializePlayer}!game@{game}}
+\doxysubsubsection{\texorpdfstring{initializePlayer()}{initializePlayer()}}
+{\footnotesize\ttfamily void initialize\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the Player stats. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{group__game_ga9d089493fcdc7c31cbf75b27d4b10264_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga2c9f74a0609e6d9e770ebea59a4d12a1}\label{group__game_ga2c9f74a0609e6d9e770ebea59a4d12a1}} 
+\index{game@{game}!update\_mouse\_position@{update\_mouse\_position}}
+\index{update\_mouse\_position@{update\_mouse\_position}!game@{game}}
+\doxysubsubsection{\texorpdfstring{update\_mouse\_position()}{update\_mouse\_position()}}
+{\footnotesize\ttfamily void update\+\_\+mouse\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+updates mouse x position and y position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x\+\_\+position \\
+\hline
+{\em y} & y\+\_\+position \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{group__game_ga2c9f74a0609e6d9e770ebea59a4d12a1_icgraph}
+\end{center}
+\end{figure}

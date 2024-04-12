@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+{
+    "files.associations": {
+        "keyboard.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+=======
+{
+    "files.associations": {
+        "keyboard.h": "c"
+    }
+>>>>>>> 96ae7c1a3d922a11ad1679ebd2533a9930c56442
+}

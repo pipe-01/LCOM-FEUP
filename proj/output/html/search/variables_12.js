@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['s_0',['s',['../pixmap_8h.html#ab63cca65a06b951cb0f95b2a84f25309',1,'pixmap.h']]],
+  ['scancode_1',['scancode',['../keyboard_8c.html#aa1de7a5557e9d96b83cf03f73c92163f',1,'scancode():&#160;keyboard.c'],['../keyboard_8h.html#aa1de7a5557e9d96b83cf03f73c92163f',1,'scancode():&#160;keyboard.c'],['../proj_8c.html#aa1de7a5557e9d96b83cf03f73c92163f',1,'scancode():&#160;keyboard.c']]],
+  ['scancodes_2',['scancodes',['../keyboard_8c.html#a4cbc2430b3efdd26ec74f5d43d4fd9a3',1,'scancodes():&#160;keyboard.c'],['../keyboard_8h.html#a4cbc2430b3efdd26ec74f5d43d4fd9a3',1,'scancodes():&#160;keyboard.c']]],
+  ['second_3',['second',['../struct_date.html#a7ab95bf164c7490d2855a7efcea6784a',1,'Date']]],
+  ['spritebackground_4',['spriteBackground',['../game_8c.html#ae80d785421df9d3124cb4bbb4a81efda',1,'spriteBackground():&#160;game.c'],['../proj_8c.html#ae80d785421df9d3124cb4bbb4a81efda',1,'spriteBackground():&#160;game.c']]],
+  ['spritecardback_5',['spriteCardBack',['../game_8c.html#abe388bd8424e01b16ac277426314bae9',1,'spriteCardBack():&#160;video.c'],['../proj_8c.html#abe388bd8424e01b16ac277426314bae9',1,'spriteCardBack():&#160;video.c'],['../video_8c.html#abe388bd8424e01b16ac277426314bae9',1,'spriteCardBack():&#160;video.c']]],
+  ['spritedeck_6',['spriteDeck',['../game_8c.html#afbf0a1be3cd5321ea1a4edddcc71314f',1,'spriteDeck():&#160;video.c'],['../proj_8c.html#afbf0a1be3cd5321ea1a4edddcc71314f',1,'spriteDeck():&#160;video.c'],['../video_8c.html#afbf0a1be3cd5321ea1a4edddcc71314f',1,'spriteDeck():&#160;video.c']]],
+  ['spritefront_7',['spriteFront',['../game_8c.html#a5df7f1ecf30cdbbee1eeabbdfb38e597',1,'game.c']]],
+  ['spritegamename_8',['spriteGameName',['../proj_8c.html#a668c67032019a5b8de8a6e3480c481e0',1,'spriteGameName():&#160;game.c'],['../game_8c.html#a668c67032019a5b8de8a6e3480c481e0',1,'spriteGameName():&#160;game.c']]],
+  ['spritegameover_9',['spriteGameOver',['../game_8c.html#aee5692f14b392b20c255150d3f64e8d8',1,'spriteGameOver():&#160;game.c'],['../proj_8c.html#aee5692f14b392b20c255150d3f64e8d8',1,'spriteGameOver():&#160;game.c']]],
+  ['spriteheart_10',['spriteHeart',['../game_8c.html#a1962d394c203be8aa2066524a4b2df9a',1,'spriteHeart():&#160;game.c'],['../proj_8c.html#a1962d394c203be8aa2066524a4b2df9a',1,'spriteHeart():&#160;game.c']]],
+  ['spriteinstructions_11',['spriteInstructions',['../game_8c.html#acc346c6c2f4960e46c89547f805b1d01',1,'spriteInstructions():&#160;game.c'],['../proj_8c.html#acc346c6c2f4960e46c89547f805b1d01',1,'spriteInstructions():&#160;game.c']]],
+  ['spritemoon_12',['spriteMoon',['../game_8c.html#a8951b4a683ec578ad8bea9e8fb2fc12f',1,'spriteMoon():&#160;game.c'],['../proj_8c.html#a8951b4a683ec578ad8bea9e8fb2fc12f',1,'spriteMoon():&#160;game.c']]],
+  ['spritemouse_13',['spriteMouse',['../game_8c.html#ab9c84cc3840f1663d8b2a0d5e525f60f',1,'spriteMouse():&#160;game.c'],['../proj_8c.html#ab9c84cc3840f1663d8b2a0d5e525f60f',1,'spriteMouse():&#160;game.c']]],
+  ['spritesun_14',['spriteSun',['../game_8c.html#a009b2ee21bcc76d2fd57f3805b6e3456',1,'spriteSun():&#160;game.c'],['../proj_8c.html#a009b2ee21bcc76d2fd57f3805b6e3456',1,'spriteSun():&#160;game.c']]],
+  ['spritevictory_15',['spriteVictory',['../game_8c.html#a348dee04beeec0ecdd6fcdf29ec44b65',1,'spriteVictory():&#160;game.c'],['../proj_8c.html#a348dee04beeec0ecdd6fcdf29ec44b65',1,'spriteVictory():&#160;game.c']]],
+  ['suit_16',['suit',['../struct_cards.html#a8ff2ab668210dc02bbf4eefd4cd7f262',1,'Cards']]],
+  ['sun_17',['sun',['../pixmap_8h.html#a60366a296cf0a3d5a0571dc10ee9eb9f',1,'pixmap.h']]]
+];

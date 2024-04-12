@@ -1,0 +1,5 @@
+<map id="initialize_game_cards" name="initialize_game_cards">
+<area shape="rect" id="node1" title="Generates the board, the 16 cards of the game." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="node2" href="$group__game.html#gab8f529375670ada86e8e1e6594e24a67" title="Get the Card Number object." alt="" coords="200,5,312,32"/>
+<area shape="rect" id="node3" href="$group__game.html#ga95bd042452e6e4fd9ccf918834b0a966" title="Get the Card Suit object." alt="" coords="211,56,301,83"/>
+</map>

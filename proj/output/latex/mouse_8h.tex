@@ -1,0 +1,34 @@
+\hypertarget{mouse_8h}{}\doxysection{mouse.\+h File Reference}
+\label{mouse_8h}\index{mouse.h@{mouse.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for mouse.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga58140ce4b013e279247e5b4054586589}{mouse\+\_\+subscribe}} (uint8\+\_\+t $\ast$\mbox{\hyperlink{mouse_8c_a0b0da21bbdff62b7b28e9af7ec3d0d76}{hook\+\_\+id\+\_\+mouse}})
+\begin{DoxyCompactList}\small\item\em Subscribes the mouse. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f}{mouse\+\_\+unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unubscribes the mouse. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_mouse}{Mouse}} interrupt handler. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_ga052f2a8458c7e3f2af5c2f472e82db2d}{print\+\_\+mouse\+\_\+packet}} ()
+\begin{DoxyCompactList}\small\item\em updates the packets \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga92e4a14386ad2dbd01ebf126a76da677}{write\+\_\+argument\+\_\+to\+\_\+mouse}} (uint8\+\_\+t argument)
+\begin{DoxyCompactList}\small\item\em Writes the argument to the input\+\_\+buffer after sending the 0x\+D4 and reads the acknolege from output\+\_\+buffer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga866efc30e91b75112023958dc0348148}{enable\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Sets the stream mode and enables the mouse data. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga632a86d84609ae8e832ee5cb4cf226a0}{disable\+\_\+mouse\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Disables the mouse data and sets the stream mode. \end{DoxyCompactList}\end{DoxyCompactItemize}

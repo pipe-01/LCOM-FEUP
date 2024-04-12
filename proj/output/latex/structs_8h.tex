@@ -1,0 +1,238 @@
+\hypertarget{structs_8h}{}\doxysection{structs.\+h File Reference}
+\label{structs_8h}\index{structs.h@{structs.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for structs.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{structs_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{structs_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_board_struct}{Board\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_player_struct}{Player\+Struct}}
+\item 
+struct \mbox{\hyperlink{struct_cards}{Cards}}
+\item 
+struct \mbox{\hyperlink{struct_mouse}{Mouse}}
+\item 
+struct \mbox{\hyperlink{struct_date}{Date}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_board_struct}{Board\+Struct}} \mbox{\hyperlink{structs_8h_a6446443296d14a2144ade9ccee9f01e3}{Board}}
+\item 
+typedef struct \mbox{\hyperlink{struct_player_struct}{Player\+Struct}} \mbox{\hyperlink{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}{Player}}
+\item 
+typedef struct \mbox{\hyperlink{struct_cards}{Cards}} \mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}}
+\item 
+typedef struct \mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{structs_8h_a95bb0982df74f13bba35dc2e207c34d4}{Mouse}}
+\item 
+typedef struct \mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{structs_8h_a8b9ee38bb5e4c1674ffc937bb1b783fd}{Date}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}{card\+Number}} \{ \newline
+\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a9ccde65e4e1405d6d9c81a289157c23e}{Ace}} = 1
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a8f23576efb89e6d93059e33057415b06}{Two}}
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a14deafe746247fb6f76771246dfb16b5}{Three}}
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a56504d7f6f1ef88c211d788b514d53d1}{Four}}
+, \newline
+\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1af107e3c0debe405b548ccedcc0827556}{Five}}
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1adcab63275dbc01b24e35a888c9deb038}{Six}}
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1adfe47319322dfc26ab2dadffb14a82d6}{Seven}}
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a668c1161f4b782a9143550f1eadce441}{Eight}}
+, \newline
+\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a087299c5c26e659be9c9e37c83e156e1}{Nine}}
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a4ced2c529d7f3b3c75a88d22804aaf68}{Ten}}
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a2ec72fcdab4d4d6939dc07c04a87dc78}{Jack}}
+, \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a011d63789e83d8beb2a90652bb03cd31}{Queen}}
+, \newline
+\mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a27fc6acdd76c4d0f3b47933e02ec65cf}{King}}
+ \}
+\item 
+enum \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79}{card\+Suit}} \{ \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79ac6f56840ac624f1f59494b1e7bf8228b}{Spades}}
+, \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79a0649491cb4f90861f7bac5ecb2c36934}{Clubs}}
+, \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79a9047ff5b23de8655a61159cf1018f726}{Hearts}}
+, \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79a91cacf2c1b2e420ddc6120dc38d791fa}{Diamonds}}
+ \}
+\item 
+enum \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62}{game\+State}} \{ \newline
+\mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62ae0f2dbf2f226e6c1acccabc9b146e3d7}{Menu}}
+, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62af123d77469a9e184943728efb5801ce9}{Game}}
+, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62adaba8aa0fcd8a87c25fec7d916c789e7}{Pause}}
+, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62a3e8c6b924e25e1dabacd8a58630e6da8}{High\+Scores}}
+, \newline
+\mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62a86fde7a60a8f37a076216f35b0ce3bda}{Instructions}}
+, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62aed2fed565c58a841153245e9d3b94c3b}{Exit}}
+, \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62a9779a7e9f14b8a5b1d7640a1ff0dab26}{Wait}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{structs_8h_a6446443296d14a2144ade9ccee9f01e3}\label{structs_8h_a6446443296d14a2144ade9ccee9f01e3}} 
+\index{structs.h@{structs.h}!Board@{Board}}
+\index{Board@{Board}!structs.h@{structs.h}}
+\doxysubsubsection{\texorpdfstring{Board}{Board}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_board_struct}{Board\+Struct}} \mbox{\hyperlink{structs_8h_a6446443296d14a2144ade9ccee9f01e3}{Board}}}
+
+\mbox{\Hypertarget{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}\label{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}} 
+\index{structs.h@{structs.h}!card@{card}}
+\index{card@{card}!structs.h@{structs.h}}
+\doxysubsubsection{\texorpdfstring{card}{card}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_cards}{Cards}} \mbox{\hyperlink{structs_8h_a90c7ec85b5286df2d9d5368c10a9d827}{card}}}
+
+\mbox{\Hypertarget{structs_8h_a8b9ee38bb5e4c1674ffc937bb1b783fd}\label{structs_8h_a8b9ee38bb5e4c1674ffc937bb1b783fd}} 
+\index{structs.h@{structs.h}!Date@{Date}}
+\index{Date@{Date}!structs.h@{structs.h}}
+\doxysubsubsection{\texorpdfstring{Date}{Date}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{struct_date}{Date}}}
+
+\mbox{\Hypertarget{structs_8h_a95bb0982df74f13bba35dc2e207c34d4}\label{structs_8h_a95bb0982df74f13bba35dc2e207c34d4}} 
+\index{structs.h@{structs.h}!Mouse@{Mouse}}
+\index{Mouse@{Mouse}!structs.h@{structs.h}}
+\doxysubsubsection{\texorpdfstring{Mouse}{Mouse}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_mouse}{Mouse}} \mbox{\hyperlink{struct_mouse}{Mouse}}}
+
+\mbox{\Hypertarget{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}\label{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}} 
+\index{structs.h@{structs.h}!Player@{Player}}
+\index{Player@{Player}!structs.h@{structs.h}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_player_struct}{Player\+Struct}} \mbox{\hyperlink{structs_8h_a1ac96b0113e51d44036f3822f0b92aad}{Player}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}} 
+\index{structs.h@{structs.h}!cardNumber@{cardNumber}}
+\index{cardNumber@{cardNumber}!structs.h@{structs.h}}
+\doxysubsubsection{\texorpdfstring{cardNumber}{cardNumber}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1}{card\+Number}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ace@{Ace}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Ace@{Ace}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a9ccde65e4e1405d6d9c81a289157c23e}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a9ccde65e4e1405d6d9c81a289157c23e}} 
+Ace&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Two@{Two}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Two@{Two}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a8f23576efb89e6d93059e33057415b06}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a8f23576efb89e6d93059e33057415b06}} 
+Two&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Three@{Three}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Three@{Three}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a14deafe746247fb6f76771246dfb16b5}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a14deafe746247fb6f76771246dfb16b5}} 
+Three&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Four@{Four}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Four@{Four}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a56504d7f6f1ef88c211d788b514d53d1}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a56504d7f6f1ef88c211d788b514d53d1}} 
+Four&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Five@{Five}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Five@{Five}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1af107e3c0debe405b548ccedcc0827556}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1af107e3c0debe405b548ccedcc0827556}} 
+Five&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Six@{Six}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Six@{Six}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1adcab63275dbc01b24e35a888c9deb038}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1adcab63275dbc01b24e35a888c9deb038}} 
+Six&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Seven@{Seven}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Seven@{Seven}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1adfe47319322dfc26ab2dadffb14a82d6}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1adfe47319322dfc26ab2dadffb14a82d6}} 
+Seven&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Eight@{Eight}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Eight@{Eight}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a668c1161f4b782a9143550f1eadce441}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a668c1161f4b782a9143550f1eadce441}} 
+Eight&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nine@{Nine}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Nine@{Nine}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a087299c5c26e659be9c9e37c83e156e1}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a087299c5c26e659be9c9e37c83e156e1}} 
+Nine&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ten@{Ten}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Ten@{Ten}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a4ced2c529d7f3b3c75a88d22804aaf68}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a4ced2c529d7f3b3c75a88d22804aaf68}} 
+Ten&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Jack@{Jack}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Jack@{Jack}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a2ec72fcdab4d4d6939dc07c04a87dc78}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a2ec72fcdab4d4d6939dc07c04a87dc78}} 
+Jack&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Queen@{Queen}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Queen@{Queen}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a011d63789e83d8beb2a90652bb03cd31}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a011d63789e83d8beb2a90652bb03cd31}} 
+Queen&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{King@{King}!structs.h@{structs.h}}\index{structs.h@{structs.h}!King@{King}}}\mbox{\Hypertarget{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a27fc6acdd76c4d0f3b47933e02ec65cf}\label{structs_8h_a763365b7bddf6d415bb5fecfe45cf5a1a27fc6acdd76c4d0f3b47933e02ec65cf}} 
+King&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{structs_8h_a8678b66efb843f2563b26c3038478e79}\label{structs_8h_a8678b66efb843f2563b26c3038478e79}} 
+\index{structs.h@{structs.h}!cardSuit@{cardSuit}}
+\index{cardSuit@{cardSuit}!structs.h@{structs.h}}
+\doxysubsubsection{\texorpdfstring{cardSuit}{cardSuit}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structs_8h_a8678b66efb843f2563b26c3038478e79}{card\+Suit}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Spades@{Spades}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Spades@{Spades}}}\mbox{\Hypertarget{structs_8h_a8678b66efb843f2563b26c3038478e79ac6f56840ac624f1f59494b1e7bf8228b}\label{structs_8h_a8678b66efb843f2563b26c3038478e79ac6f56840ac624f1f59494b1e7bf8228b}} 
+Spades&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Clubs@{Clubs}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Clubs@{Clubs}}}\mbox{\Hypertarget{structs_8h_a8678b66efb843f2563b26c3038478e79a0649491cb4f90861f7bac5ecb2c36934}\label{structs_8h_a8678b66efb843f2563b26c3038478e79a0649491cb4f90861f7bac5ecb2c36934}} 
+Clubs&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hearts@{Hearts}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Hearts@{Hearts}}}\mbox{\Hypertarget{structs_8h_a8678b66efb843f2563b26c3038478e79a9047ff5b23de8655a61159cf1018f726}\label{structs_8h_a8678b66efb843f2563b26c3038478e79a9047ff5b23de8655a61159cf1018f726}} 
+Hearts&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Diamonds@{Diamonds}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Diamonds@{Diamonds}}}\mbox{\Hypertarget{structs_8h_a8678b66efb843f2563b26c3038478e79a91cacf2c1b2e420ddc6120dc38d791fa}\label{structs_8h_a8678b66efb843f2563b26c3038478e79a91cacf2c1b2e420ddc6120dc38d791fa}} 
+Diamonds&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{structs_8h_aaf29bbe309504beb4cfec2481eacee62}\label{structs_8h_aaf29bbe309504beb4cfec2481eacee62}} 
+\index{structs.h@{structs.h}!gameState@{gameState}}
+\index{gameState@{gameState}!structs.h@{structs.h}}
+\doxysubsubsection{\texorpdfstring{gameState}{gameState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structs_8h_aaf29bbe309504beb4cfec2481eacee62}{game\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Menu@{Menu}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Menu@{Menu}}}\mbox{\Hypertarget{structs_8h_aaf29bbe309504beb4cfec2481eacee62ae0f2dbf2f226e6c1acccabc9b146e3d7}\label{structs_8h_aaf29bbe309504beb4cfec2481eacee62ae0f2dbf2f226e6c1acccabc9b146e3d7}} 
+Menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Game@{Game}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Game@{Game}}}\mbox{\Hypertarget{structs_8h_aaf29bbe309504beb4cfec2481eacee62af123d77469a9e184943728efb5801ce9}\label{structs_8h_aaf29bbe309504beb4cfec2481eacee62af123d77469a9e184943728efb5801ce9}} 
+Game&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pause@{Pause}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Pause@{Pause}}}\mbox{\Hypertarget{structs_8h_aaf29bbe309504beb4cfec2481eacee62adaba8aa0fcd8a87c25fec7d916c789e7}\label{structs_8h_aaf29bbe309504beb4cfec2481eacee62adaba8aa0fcd8a87c25fec7d916c789e7}} 
+Pause&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HighScores@{HighScores}!structs.h@{structs.h}}\index{structs.h@{structs.h}!HighScores@{HighScores}}}\mbox{\Hypertarget{structs_8h_aaf29bbe309504beb4cfec2481eacee62a3e8c6b924e25e1dabacd8a58630e6da8}\label{structs_8h_aaf29bbe309504beb4cfec2481eacee62a3e8c6b924e25e1dabacd8a58630e6da8}} 
+High\+Scores&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Instructions@{Instructions}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Instructions@{Instructions}}}\mbox{\Hypertarget{structs_8h_aaf29bbe309504beb4cfec2481eacee62a86fde7a60a8f37a076216f35b0ce3bda}\label{structs_8h_aaf29bbe309504beb4cfec2481eacee62a86fde7a60a8f37a076216f35b0ce3bda}} 
+Instructions&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Exit@{Exit}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Exit@{Exit}}}\mbox{\Hypertarget{structs_8h_aaf29bbe309504beb4cfec2481eacee62aed2fed565c58a841153245e9d3b94c3b}\label{structs_8h_aaf29bbe309504beb4cfec2481eacee62aed2fed565c58a841153245e9d3b94c3b}} 
+Exit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Wait@{Wait}!structs.h@{structs.h}}\index{structs.h@{structs.h}!Wait@{Wait}}}\mbox{\Hypertarget{structs_8h_aaf29bbe309504beb4cfec2481eacee62a9779a7e9f14b8a5b1d7640a1ff0dab26}\label{structs_8h_aaf29bbe309504beb4cfec2481eacee62a9779a7e9f14b8a5b1d7640a1ff0dab26}} 
+Wait&\\
+\hline
+
+\end{DoxyEnumFields}

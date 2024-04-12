@@ -1,0 +1,4 @@
+<map id="drawInstructions" name="drawInstructions">
+<area shape="rect" id="node1" title="Draws the instructions of the game." alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node2" href="$group__video.html#gaf61659f103bf1d72b97b5cc69a3f0d3c" title="Draws a pixel." alt="" coords="169,5,277,32"/>
+</map>

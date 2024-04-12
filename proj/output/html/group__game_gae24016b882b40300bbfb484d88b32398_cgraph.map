@@ -1,0 +1,10 @@
+<map id="draw_game_cards" name="draw_game_cards">
+<area shape="rect" id="node1" title="Draws the board, the background and the cards." alt="" coords="5,120,132,147"/>
+<area shape="rect" id="node2" href="$group__game.html#gacbd5457c126570af763ea24dc41da830" title="Draws the Backgorund." alt="" coords="180,88,299,115"/>
+<area shape="rect" id="node4" href="$group__game.html#ga09843b75080525ab8f5572265ac73d67" title="Flips a card that is facing up, to facing down." alt="" coords="186,151,293,177"/>
+<area shape="rect" id="node7" href="$group__game.html#gafb7aed5673dc69ab9499029e10b844a3" title="Flips a card that is facing down, to facing up." alt="" coords="194,208,285,235"/>
+<area shape="rect" id="node8" href="$group__video.html#gac139142181a96961cc91e2fdb8738d17" title=" " alt="" coords="363,5,463,32"/>
+<area shape="rect" id="node3" href="$group__video.html#gaf61659f103bf1d72b97b5cc69a3f0d3c" title="Draws a pixel." alt="" coords="527,107,635,133"/>
+<area shape="rect" id="node5" href="$group__game.html#gabd7266acf9159cb22ea03bec1f95b720" title="Get the Cards Screen X Y object." alt="" coords="347,157,478,184"/>
+<area shape="rect" id="node6" href="$group__video.html#ga280e76a809cc7f8a67508b9cd7a68a44" title="Makes part of the screen green." alt="" coords="347,208,479,235"/>
+</map>

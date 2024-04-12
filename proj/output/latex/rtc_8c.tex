@@ -1,0 +1,45 @@
+\hypertarget{rtc_8c}{}\doxysection{rtc.\+c File Reference}
+\label{rtc_8c}\index{rtc.c@{rtc.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group___r_t_c_gad541628ec8bd836bbd3b2eefd316069b}{rtc\+\_\+subscribe}} ()
+\begin{DoxyCompactList}\small\item\em Subscribes the rtc. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___r_t_c_ga8ee1ffb1e38bc735ccf645370fe5b573}{rtc\+\_\+unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em Unubscribes the rtc. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{group___r_t_c_ga8430542e163702ddb835ed37c7bda60b}{convert\+\_\+bcd\+\_\+to\+\_\+dec}} (uint8\+\_\+t bcd)
+\begin{DoxyCompactList}\small\item\em convert bcd number to decimal \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___r_t_c_ga8ac73c537a96265ea757253d160c54d2}{get\+\_\+date}} ()
+\begin{DoxyCompactList}\small\item\em fills the struct \mbox{\hyperlink{struct_date}{Date}} with the actual date \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{rtc_8c_a1dc6df4f5eac6300e1bb1f8dce3a10fd}{date}}
+\item 
+int \mbox{\hyperlink{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}{rtc\+\_\+hook\+\_\+id}} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_a1dc6df4f5eac6300e1bb1f8dce3a10fd}\label{rtc_8c_a1dc6df4f5eac6300e1bb1f8dce3a10fd}} 
+\index{rtc.c@{rtc.c}!date@{date}}
+\index{date@{date}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_date}{Date}} date}
+
+\mbox{\Hypertarget{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}\label{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}} 
+\index{rtc.c@{rtc.c}!rtc\_hook\_id@{rtc\_hook\_id}}
+\index{rtc\_hook\_id@{rtc\_hook\_id}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_hook\_id}{rtc\_hook\_id}}
+{\footnotesize\ttfamily int rtc\+\_\+hook\+\_\+id = 3}
+

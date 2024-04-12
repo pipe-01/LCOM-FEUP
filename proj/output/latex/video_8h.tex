@@ -1,0 +1,94 @@
+\hypertarget{video_8h}{}\doxysection{video.\+h File Reference}
+\label{video_8h}\index{video.h@{video.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$machine/int86.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lab5.\+h$>$}\newline
+Include dependency graph for video.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{video_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{video_8h_ad6ff324701f28fdcd04a8408f68a3f6c}{CARD\+\_\+\+WIDTH}}~69
+\item 
+\#define \mbox{\hyperlink{video_8h_a1112bc16f788ef03ff4165abfa648d28}{CARD\+\_\+\+HEIGHT}}~93
+\item 
+\#define \mbox{\hyperlink{video_8h_a35be84e9d079df30664be87008be9512}{LETTER\+\_\+\+WIDTH}}~20
+\item 
+\#define \mbox{\hyperlink{video_8h_a55a40fdf480dbb6cda528deb2711bc7b}{LETTER\+\_\+\+HEIGHT}}~30
+\item 
+\#define \mbox{\hyperlink{video_8h_a34b0ee6b88f41401e199b3f10e1d48d4}{MOUSE\+\_\+\+WIDTH}}~50
+\item 
+\#define \mbox{\hyperlink{video_8h_acb18dcfa495d57f980ec36e86b89de88}{MOUSE\+\_\+\+HEIGHT}}~50
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__video_gac67621adf87bcebb04fab536c7245315}{vg\+\_\+start}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Starts the video\+\_\+card in mode \textquotesingle{}mode\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_ga28e24d4a4f8c58583aeb9c91b991d8eb}{my\+\_\+update\+Video\+Mem}} ()
+\begin{DoxyCompactList}\small\item\em Copies the buffer (color of each pixel) into the memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_ga53ab0bc994ad20993bc7fd43b9b66db2}{my\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}}, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_gaf61659f103bf1d72b97b5cc69a3f0d3c}{my\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, uint16\+\_\+t \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}}, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__video_ga22cd19f7ba8863c00392613422fb7be7}{green\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Makes every pixel of the screen green. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__video_ga280e76a809cc7f8a67508b9cd7a68a44}{green\+Part\+Of\+Screen}} (int \mbox{\hyperlink{pixmap_8h_a891d7fb2d971c580c032d435513ff604}{x}}, int \mbox{\hyperlink{pixmap_8h_a3195bd9a669b34a51897b3d423f7604c}{y}}, int width, int height)
+\begin{DoxyCompactList}\small\item\em Makes part of the screen green. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__video_gac139142181a96961cc91e2fdb8738d17}{vg\+\_\+draw\+\_\+card}} (int screenX, int screenY, int positionX, int positionY)
+\item 
+void \mbox{\hyperlink{group__video_gafa847549e9dc6e4f49f651623bc456dc}{clear\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em free the memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{video_8h_a1112bc16f788ef03ff4165abfa648d28}\label{video_8h_a1112bc16f788ef03ff4165abfa648d28}} 
+\index{video.h@{video.h}!CARD\_HEIGHT@{CARD\_HEIGHT}}
+\index{CARD\_HEIGHT@{CARD\_HEIGHT}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{CARD\_HEIGHT}{CARD\_HEIGHT}}
+{\footnotesize\ttfamily \#define CARD\+\_\+\+HEIGHT~93}
+
+\mbox{\Hypertarget{video_8h_ad6ff324701f28fdcd04a8408f68a3f6c}\label{video_8h_ad6ff324701f28fdcd04a8408f68a3f6c}} 
+\index{video.h@{video.h}!CARD\_WIDTH@{CARD\_WIDTH}}
+\index{CARD\_WIDTH@{CARD\_WIDTH}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{CARD\_WIDTH}{CARD\_WIDTH}}
+{\footnotesize\ttfamily \#define CARD\+\_\+\+WIDTH~69}
+
+\mbox{\Hypertarget{video_8h_a55a40fdf480dbb6cda528deb2711bc7b}\label{video_8h_a55a40fdf480dbb6cda528deb2711bc7b}} 
+\index{video.h@{video.h}!LETTER\_HEIGHT@{LETTER\_HEIGHT}}
+\index{LETTER\_HEIGHT@{LETTER\_HEIGHT}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{LETTER\_HEIGHT}{LETTER\_HEIGHT}}
+{\footnotesize\ttfamily \#define LETTER\+\_\+\+HEIGHT~30}
+
+\mbox{\Hypertarget{video_8h_a35be84e9d079df30664be87008be9512}\label{video_8h_a35be84e9d079df30664be87008be9512}} 
+\index{video.h@{video.h}!LETTER\_WIDTH@{LETTER\_WIDTH}}
+\index{LETTER\_WIDTH@{LETTER\_WIDTH}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{LETTER\_WIDTH}{LETTER\_WIDTH}}
+{\footnotesize\ttfamily \#define LETTER\+\_\+\+WIDTH~20}
+
+\mbox{\Hypertarget{video_8h_acb18dcfa495d57f980ec36e86b89de88}\label{video_8h_acb18dcfa495d57f980ec36e86b89de88}} 
+\index{video.h@{video.h}!MOUSE\_HEIGHT@{MOUSE\_HEIGHT}}
+\index{MOUSE\_HEIGHT@{MOUSE\_HEIGHT}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_HEIGHT}{MOUSE\_HEIGHT}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+HEIGHT~50}
+
+\mbox{\Hypertarget{video_8h_a34b0ee6b88f41401e199b3f10e1d48d4}\label{video_8h_a34b0ee6b88f41401e199b3f10e1d48d4}} 
+\index{video.h@{video.h}!MOUSE\_WIDTH@{MOUSE\_WIDTH}}
+\index{MOUSE\_WIDTH@{MOUSE\_WIDTH}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_WIDTH}{MOUSE\_WIDTH}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+WIDTH~50}
+

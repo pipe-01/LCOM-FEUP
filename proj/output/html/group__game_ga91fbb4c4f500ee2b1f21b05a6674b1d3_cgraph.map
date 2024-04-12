@@ -1,0 +1,5 @@
+<map id="draw_pause" name="draw_pause">
+<area shape="rect" id="node1" title="Draws the pause menu, Resume button, Instructions Button and Exit button." alt="" coords="5,31,96,57"/>
+<area shape="rect" id="node2" href="$group__game.html#ga441fdbca6cd83b7b285b640204681bbc" title="Draws the letter &#39;letter&#39; in the position (screenX, screenY)" alt="" coords="144,5,229,32"/>
+<area shape="rect" id="node3" href="$group__video.html#gaf61659f103bf1d72b97b5cc69a3f0d3c" title="Draws a pixel." alt="" coords="277,31,385,57"/>
+</map>
